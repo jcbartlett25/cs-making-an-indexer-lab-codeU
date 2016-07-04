@@ -1,0 +1,4660 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="Joshuas-MacBook-Pro.local" name="com.flatironschool.javacs.IndexTest" skipped="0" tests="1" time="0.429" timestamp="2016-07-04T21:44:46">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="env.MONGO_PATH" value="/usr/local/mongodb" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="env.XPC_SERVICE_NAME" value="0" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="env.SECURITYSESSIONID" value="186a6" />
+    <property name="env._system_arch" value="x86_64" />
+    <property name="env.GEM_HOME" value="/Users/jcbart12595/.rvm/gems/ruby-2.3.0" />
+    <property name="os.name" value="Mac OS X" />
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes" />
+    <property name="env.TMPDIR" value="/var/folders/zg/c7_n2w8j3bd_t_9dxvmm9sch0000gn/T/" />
+    <property name="env.PWD" value="/Users/jcbart12595/Desktop/Github/cs-making-an-indexer-lab-codeU" />
+    <property name="env.LANG" value="en_US.UTF-8" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="ant.home" value="/usr/local/Cellar/ant/1.9.6/libexec" />
+    <property name="java.runtime.version" value="1.8.0_60-b27" />
+    <property name="env.MY_RUBY_HOME" value="/Users/jcbart12595/.rvm/rubies/ruby-2.3.0" />
+    <property name="env.Apple_PubSub_Socket_Render" value="/private/tmp/com.apple.launchd.GNccNZv62s/Render" />
+    <property name="env.rvm_version" value="1.26.11 (latest)" />
+    <property name="user.name" value="jcbart12595" />
+    <property name="env.USER" value="jcbart12595" />
+    <property name="env.SHELL" value="/bin/bash" />
+    <property name="env.__CF_USER_TEXT_ENCODING" value="0x1F5:0x0:0x0" />
+    <property name="env._system_type" value="Darwin" />
+    <property name="env.PATH" value="/Users/jcbart12595/.rvm/gems/ruby-2.3.0/bin:/Users/jcbart12595/.rvm/gems/ruby-2.3.0@global/bin:/Users/jcbart12595/.rvm/rubies/ruby-2.3.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/mongodb/bin:/Users/jcbart12595/.rvm/bin" />
+    <property name="user.language" value="en" />
+    <property name="env.rvm_prefix" value="/Users/jcbart12595" />
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib" />
+    <property name="ant.project.default-target" value="build" />
+    <property name="env.XPC_FLAGS" value="0x0" />
+    <property name="ant.project.name" value="JavaCS" />
+    <property name="env.rvm_path" value="/Users/jcbart12595/.rvm" />
+    <property name="env.RUBY_VERSION" value="ruby-2.3.0" />
+    <property name="java.version" value="1.8.0_60" />
+    <property name="user.timezone" value="" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="env._system_name" value="OSX" />
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/endorsed" />
+    <property name="sun.cpu.isalist" value="" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="env.rvm_bin_path" value="/Users/jcbart12595/.rvm/bin" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="env.SHLVL" value="3" />
+    <property name="file.separator" value="/" />
+    <property name="env._system_version" value="10.11" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.class.version" value="52.0" />
+    <property name="user.country" value="US" />
+    <property name="ant.file.JavaCS" value="/Users/jcbart12595/Desktop/Github/cs-making-an-indexer-lab-codeU/javacs-lab06/build.xml" />
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="env.LOGNAME" value="jcbart12595" />
+    <property name="ant.file" value="/Users/jcbart12595/Desktop/Github/cs-making-an-indexer-lab-codeU/javacs-lab06/build.xml" />
+    <property name="os.version" value="10.11.5" />
+    <property name="env.TERM_PROGRAM_VERSION" value="361.1" />
+    <property name="path.separator" value=":" />
+    <property name="java.vm.version" value="25.60-b23" />
+    <property name="ant.library.dir" value="/usr/local/Cellar/ant/1.9.6/libexec/lib" />
+    <property name="junit.output.dir" value="junit" />
+    <property name="env.IRBRC" value="/Users/jcbart12595/.rvm/rubies/ruby-2.3.0/.irbrc" />
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob" />
+    <property name="env.TERM" value="xterm-256color" />
+    <property name="sun.io.unicode.encoding" value="UnicodeBig" />
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit" />
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="env.JAVA_MAIN_CLASS_5807" value="org.apache.tools.ant.launch.Launcher" />
+    <property name="env.GEM_PATH" value="/Users/jcbart12595/.rvm/gems/ruby-2.3.0:/Users/jcbart12595/.rvm/gems/ruby-2.3.0@global" />
+    <property name="user.home" value="/Users/jcbart12595" />
+    <property name="target" value="1.7" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="env.TERM_PROGRAM" value="Apple_Terminal" />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="java.library.path" value="/Users/jcbart12595/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
+    <property name="gopherProxySet" value="false" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.9.6 compiled on June 29 2015" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.flatironschool.javacs.IndexTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/jcbart12595/Desktop/Github/cs-making-an-indexer-lab-codeU/javacs-lab06/junit/TEST-com.flatironschool.javacs.IndexTest.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter crashfile=/Users/jcbart12595/Desktop/Github/cs-making-an-indexer-lab-codeU/javacs-lab06/junitvmwatcher1304857904544664739.properties propsfile=/Users/jcbart12595/Desktop/Github/cs-making-an-indexer-lab-codeU/javacs-lab06/junit2464620095617149038.properties" />
+    <property name="java.class.path" value="/Users/jcbart12595/Desktop/Github/cs-making-an-indexer-lab-codeU/javacs-lab06/bin:/Users/jcbart12595/Desktop/Github/cs-making-an-indexer-lab-codeU/javacs-lab06/lib/jsoup-1.8.3.jar:/Users/jcbart12595/Desktop/Github/cs-making-an-indexer-lab-codeU/javacs-lab06/lib/junit-4.12.jar:/Users/jcbart12595/Desktop/Github/cs-making-an-indexer-lab-codeU/javacs-lab06/lib/hamcrest-core-1.3.jar:/usr/local/Cellar/ant/1.9.6/libexec/lib/ant-launcher.jar:/usr/local/Cellar/ant/1.9.6/libexec/lib/ant.jar:/usr/local/Cellar/ant/1.9.6/libexec/lib/ant-junit.jar:/usr/local/Cellar/ant/1.9.6/libexec/lib/ant-junit4.jar" />
+    <property name="env.TERM_SESSION_ID" value="16FC192B-B5B4-4F4C-8F09-2AC672545835" />
+    <property name="ant.file.type.JavaCS" value="file" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ant.file.type" value="file" />
+    <property name="java.vm.specification.version" value="1.8" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="debuglevel" value="source,lines,vars" />
+    <property name="env.HOME" value="/Users/jcbart12595" />
+    <property name="java.io.tmpdir" value="/var/folders/zg/c7_n2w8j3bd_t_9dxvmm9sch0000gn/T/" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="env.SSH_AUTH_SOCK" value="/private/tmp/com.apple.launchd.mwexCRZ9Xb/Listeners" />
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment" />
+    <property name="os.arch" value="x86_64" />
+    <property name="java.ext.dirs" value="/Users/jcbart12595/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
+    <property name="user.dir" value="/Users/jcbart12595/Desktop/Github/cs-making-an-indexer-lab-codeU" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="basedir" value="/Users/jcbart12595/Desktop/Github/cs-making-an-indexer-lab-codeU/javacs-lab06" />
+    <property name="ant.java.version" value="1.8" />
+    <property name="ant.core.lib" value="/usr/local/Cellar/ant/1.9.6/libexec/lib/ant.jar" />
+    <property name="source" value="1.7" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="java.specification.version" value="1.8" />
+    <property name="ant.project.invoked-targets" value="test" />
+  </properties>
+  <testcase classname="com.flatironschool.javacs.IndexTest" name="testIndexPage" time="0.375" />
+  <system-out><![CDATA[
+    https://en.wikipedia.org/wiki/Programming_language 288
+    https://en.wikipedia.org/wiki/Java_(programming_language) 336
+javabeans
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+german
+    https://en.wikipedia.org/wiki/Programming_language 1
+govern
+    https://en.wikipedia.org/wiki/Programming_language 1
+recognized
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+remote
+    https://en.wikipedia.org/wiki/Programming_language 1
+slower
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+without
+    https://en.wikipedia.org/wiki/Programming_language 7
+    https://en.wikipedia.org/wiki/Java_(programming_language) 5
+these
+    https://en.wikipedia.org/wiki/Programming_language 12
+    https://en.wikipedia.org/wiki/Java_(programming_language) 5
+asserts
+    https://en.wikipedia.org/wiki/Programming_language 1
+introduced
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+would
+    https://en.wikipedia.org/wiki/Programming_language 3
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+protected
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+xml
+    https://en.wikipedia.org/wiki/Programming_language 2
+4gl
+    https://en.wikipedia.org/wiki/Programming_language 1
+ten
+    https://en.wikipedia.org/wiki/Programming_language 1
+organizational
+    https://en.wikipedia.org/wiki/Programming_language 1
+blockcontext
+    https://en.wikipedia.org/wiki/Programming_language 1
+wedded
+    https://en.wikipedia.org/wiki/Programming_language 1
+$
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+thus
+    https://en.wikipedia.org/wiki/Programming_language 1
+devices
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+optional
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+require
+    https://en.wikipedia.org/wiki/Programming_language 7
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+scratch
+    https://en.wikipedia.org/wiki/Programming_language 1
+analysis
+    https://en.wikipedia.org/wiki/Programming_language 4
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+0
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+standards
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+1
+    https://en.wikipedia.org/wiki/Programming_language 8
+    https://en.wikipedia.org/wiki/Java_(programming_language) 9
+reuses
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+2
+    https://en.wikipedia.org/wiki/Programming_language 6
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+linq
+    https://en.wikipedia.org/wiki/Programming_language 1
+3
+    https://en.wikipedia.org/wiki/Programming_language 3
+size
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+4
+    https://en.wikipedia.org/wiki/Programming_language 2
+5
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+left
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+6
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+7
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+8
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+historically
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+9
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+<
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+much
+    https://en.wikipedia.org/wiki/Programming_language 5
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+>
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+object
+    https://en.wikipedia.org/wiki/Programming_language 6
+    https://en.wikipedia.org/wiki/Java_(programming_language) 23
+role
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+independent
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+rejecting
+    https://en.wikipedia.org/wiki/Programming_language 1
+achieve
+    https://en.wikipedia.org/wiki/Programming_language 1
+blur
+    https://en.wikipedia.org/wiki/Programming_language 1
+suffice
+    https://en.wikipedia.org/wiki/Programming_language 1
+notable
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+example
+    https://en.wikipedia.org/wiki/Programming_language 17
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+paradigmatic
+    https://en.wikipedia.org/wiki/Programming_language 1
+result
+    https://en.wikipedia.org/wiki/Programming_language 3
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+characters
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+rejects
+    https://en.wikipedia.org/wiki/Programming_language 1
+after
+    https://en.wikipedia.org/wiki/Java_(programming_language) 5
+solaris
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+resigned
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+hand
+    https://en.wikipedia.org/wiki/Programming_language 2
+a
+    https://en.wikipedia.org/wiki/Programming_language 167
+    https://en.wikipedia.org/wiki/Java_(programming_language) 101
+mainframes
+    https://en.wikipedia.org/wiki/Programming_language 1
+b
+    https://en.wikipedia.org/wiki/Programming_language 1
+c
+    https://en.wikipedia.org/wiki/Programming_language 16
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+licensed
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+address
+    https://en.wikipedia.org/wiki/Programming_language 1
+sets
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+d
+    https://en.wikipedia.org/wiki/Programming_language 1
+e
+    https://en.wikipedia.org/wiki/Programming_language 5
+    https://en.wikipedia.org/wiki/Java_(programming_language) 5
+kernel
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+f
+    https://en.wikipedia.org/wiki/Programming_language 1
+g
+    https://en.wikipedia.org/wiki/Programming_language 1
+i
+    https://en.wikipedia.org/wiki/Programming_language 5
+    https://en.wikipedia.org/wiki/Java_(programming_language) 5
+combines
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+printing
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+gnu
+    https://en.wikipedia.org/wiki/Java_(programming_language) 5
+the
+    https://en.wikipedia.org/wiki/Programming_language 264
+    https://en.wikipedia.org/wiki/Java_(programming_language) 339
+straight
+    https://en.wikipedia.org/wiki/Programming_language 1
+p
+    https://en.wikipedia.org/wiki/Programming_language 4
+component
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+licenses
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+r
+    https://en.wikipedia.org/wiki/Programming_language 1
+s
+    https://en.wikipedia.org/wiki/Programming_language 15
+    https://en.wikipedia.org/wiki/Java_(programming_language) 17
+w
+    https://en.wikipedia.org/wiki/Programming_language 1
+x
+    https://en.wikipedia.org/wiki/Programming_language 3
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+fifth
+    https://en.wikipedia.org/wiki/Programming_language 2
+information
+    https://en.wikipedia.org/wiki/Programming_language 2
+combined
+    https://en.wikipedia.org/wiki/Programming_language 2
+returned
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+novel
+    https://en.wikipedia.org/wiki/Programming_language 1
+discuss
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+standard
+    https://en.wikipedia.org/wiki/Programming_language 5
+    https://en.wikipedia.org/wiki/Java_(programming_language) 9
+november
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+harmony
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+keywords
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+correct
+    https://en.wikipedia.org/wiki/Programming_language 8
+dijkstra
+    https://en.wikipedia.org/wiki/Programming_language 2
+completeness
+    https://en.wikipedia.org/wiki/Programming_language 1
+specifications
+    https://en.wikipedia.org/wiki/Programming_language 3
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+infers
+    https://en.wikipedia.org/wiki/Programming_language 1
+analyses
+    https://en.wikipedia.org/wiki/Programming_language 1
+syntactic
+    https://en.wikipedia.org/wiki/Programming_language 4
+speakers
+    https://en.wikipedia.org/wiki/Programming_language 1
+implement
+    https://en.wikipedia.org/wiki/Programming_language 1
+others
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+gpl
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+making
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+lisp
+    https://en.wikipedia.org/wiki/Programming_language 5
+unchecked
+    https://en.wikipedia.org/wiki/Programming_language 1
+troff
+    https://en.wikipedia.org/wiki/Programming_language 1
+check
+    https://en.wikipedia.org/wiki/Programming_language 1
+lack
+    https://en.wikipedia.org/wiki/Programming_language 1
+external
+    https://en.wikipedia.org/wiki/Programming_language 2
+aside
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+claims
+    https://en.wikipedia.org/wiki/Programming_language 1
+formats
+    https://en.wikipedia.org/wiki/Programming_language 2
+applied
+    https://en.wikipedia.org/wiki/Programming_language 1
+relieving
+    https://en.wikipedia.org/wiki/Programming_language 1
+provided
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+interface
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 5
+representation
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+compiled
+    https://en.wikipedia.org/wiki/Programming_language 3
+    https://en.wikipedia.org/wiki/Java_(programming_language) 5
+producing
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+provides
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 7
+patrick
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+standardized
+    https://en.wikipedia.org/wiki/Programming_language 1
+hard
+    https://en.wikipedia.org/wiki/Programming_language 2
+compiler
+    https://en.wikipedia.org/wiki/Programming_language 6
+    https://en.wikipedia.org/wiki/Java_(programming_language) 9
+generically
+    https://en.wikipedia.org/wiki/Programming_language 1
+compiles
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+citation
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+blocks
+    https://en.wikipedia.org/wiki/Programming_language 3
+multiple
+    https://en.wikipedia.org/wiki/Programming_language 3
+    https://en.wikipedia.org/wiki/Java_(programming_language) 8
+mobile
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+perform
+    https://en.wikipedia.org/wiki/Programming_language 4
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+evolution
+    https://en.wikipedia.org/wiki/Programming_language 1
+better
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+args
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+with
+    https://en.wikipedia.org/wiki/Programming_language 22
+    https://en.wikipedia.org/wiki/Java_(programming_language) 36
+service
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+coffee
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+there
+    https://en.wikipedia.org/wiki/Programming_language 6
+    https://en.wikipedia.org/wiki/Java_(programming_language) 6
+translation
+    https://en.wikipedia.org/wiki/Programming_language 2
+permit
+    https://en.wikipedia.org/wiki/Programming_language 2
+syntax
+    https://en.wikipedia.org/wiki/Programming_language 10
+    https://en.wikipedia.org/wiki/Java_(programming_language) 5
+well
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+handling
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+personaljava
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+named
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+executables
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+considered
+    https://en.wikipedia.org/wiki/Programming_language 7
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+atlas
+    https://en.wikipedia.org/wiki/Programming_language 2
+averaging
+    https://en.wikipedia.org/wiki/Programming_language 1
+focus
+    https://en.wikipedia.org/wiki/Programming_language 1
+changing
+    https://en.wikipedia.org/wiki/Programming_language 2
+approach
+    https://en.wikipedia.org/wiki/Programming_language 1
+implication
+    https://en.wikipedia.org/wiki/Programming_language 1
+2+2
+    https://en.wikipedia.org/wiki/Programming_language 1
+block
+    https://en.wikipedia.org/wiki/Programming_language 1
+per
+    https://en.wikipedia.org/wiki/Programming_language 2
+write
+    https://en.wikipedia.org/wiki/Programming_language 8
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+flow
+    https://en.wikipedia.org/wiki/Programming_language 5
+order
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+cooperation
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+period
+    https://en.wikipedia.org/wiki/Programming_language 2
+lexical
+    https://en.wikipedia.org/wiki/Programming_language 1
+went
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+jcomponent
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+corporation
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+distant
+    https://en.wikipedia.org/wiki/Programming_language 1
+clr
+    https://en.wikipedia.org/wiki/Programming_language 1
+understand
+    https://en.wikipedia.org/wiki/Programming_language 1
+underlying
+    https://en.wikipedia.org/wiki/Programming_language 3
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+slowly
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+ever
+    https://en.wikipedia.org/wiki/Programming_language 1
+million
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+even
+    https://en.wikipedia.org/wiki/Programming_language 8
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+strongly
+    https://en.wikipedia.org/wiki/Programming_language 4
+transparency
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+binary
+    https://en.wikipedia.org/wiki/Programming_language 1
+integration
+    https://en.wikipedia.org/wiki/Programming_language 1
+gui
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+orders
+    https://en.wikipedia.org/wiki/Programming_language 1
+conversions
+    https://en.wikipedia.org/wiki/Programming_language 2
+circuit
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+cms
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+respectively
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+kinds
+    https://en.wikipedia.org/wiki/Programming_language 4
+functionality
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+restrict
+    https://en.wikipedia.org/wiki/Programming_language 1
+conjunction
+    https://en.wikipedia.org/wiki/Programming_language 1
+goto
+    https://en.wikipedia.org/wiki/Programming_language 1
+top
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+too
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+native
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+have
+    https://en.wikipedia.org/wiki/Programming_language 31
+    https://en.wikipedia.org/wiki/Java_(programming_language) 9
+casting
+    https://en.wikipedia.org/wiki/Programming_language 3
+imperative
+    https://en.wikipedia.org/wiki/Programming_language 3
+declarative
+    https://en.wikipedia.org/wiki/Programming_language 2
+product
+    https://en.wikipedia.org/wiki/Programming_language 1
+particularly
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+famous
+    https://en.wikipedia.org/wiki/Programming_language 1
+dominant
+    https://en.wikipedia.org/wiki/Programming_language 2
+ucsd
+    https://en.wikipedia.org/wiki/Programming_language 1
+intellectual
+    https://en.wikipedia.org/wiki/Programming_language 1
+inconsistent
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+opportunities
+    https://en.wikipedia.org/wiki/Programming_language 1
+produce
+    https://en.wikipedia.org/wiki/Programming_language 1
+interchangeably
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+framework
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+requiring
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+regard
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+php
+    https://en.wikipedia.org/wiki/Programming_language 1
+attributes
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+smalltalk
+    https://en.wikipedia.org/wiki/Programming_language 2
+entity
+    https://en.wikipedia.org/wiki/Programming_language 1
+communities
+    https://en.wikipedia.org/wiki/Programming_language 1
+com
+    https://en.wikipedia.org/wiki/Programming_language 1
+prohibit
+    https://en.wikipedia.org/wiki/Programming_language 1
+measuring
+    https://en.wikipedia.org/wiki/Programming_language 1
+environments
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+steward
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+almost
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+prevents
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+lets
+    https://en.wikipedia.org/wiki/Programming_language 1
+simplifies
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+translated
+    https://en.wikipedia.org/wiki/Programming_language 1
+descendant
+    https://en.wikipedia.org/wiki/Programming_language 1
+manner
+    https://en.wikipedia.org/wiki/Programming_language 2
+upon
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+platforms
+    https://en.wikipedia.org/wiki/Java_(programming_language) 8
+identical
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+earlier
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+academia
+    https://en.wikipedia.org/wiki/Programming_language 1
+whether
+    https://en.wikipedia.org/wiki/Programming_language 2
+academic
+    https://en.wikipedia.org/wiki/Programming_language 1
+members
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+discusses
+    https://en.wikipedia.org/wiki/Programming_language 1
+function
+    https://en.wikipedia.org/wiki/Programming_language 4
+motif
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+verification
+    https://en.wikipedia.org/wiki/Programming_language 1
+circumstances
+    https://en.wikipedia.org/wiki/Programming_language 1
+macros
+    https://en.wikipedia.org/wiki/Programming_language 2
+void
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+including
+    https://en.wikipedia.org/wiki/Programming_language 4
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+clones
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+lay
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+differs
+    https://en.wikipedia.org/wiki/Programming_language 2
+cpu
+    https://en.wikipedia.org/wiki/Programming_language 1
+guaranteed
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+constitutes
+    https://en.wikipedia.org/wiki/Programming_language 1
+less
+    https://en.wikipedia.org/wiki/Programming_language 3
+basis
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+200
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+were
+    https://en.wikipedia.org/wiki/Programming_language 17
+    https://en.wikipedia.org/wiki/Java_(programming_language) 5
+translates
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+arms
+    https://en.wikipedia.org/wiki/Programming_language 1
+basic
+    https://en.wikipedia.org/wiki/Programming_language 2
+specialized
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+became
+    https://en.wikipedia.org/wiki/Programming_language 3
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+initiated
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+musa
+    https://en.wikipedia.org/wiki/Programming_language 1
+university
+    https://en.wikipedia.org/wiki/Programming_language 5
+cause
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+technique
+    https://en.wikipedia.org/wiki/Programming_language 2
+manifestly
+    https://en.wikipedia.org/wiki/Programming_language 3
+overarching
+    https://en.wikipedia.org/wiki/Programming_language 1
+units
+    https://en.wikipedia.org/wiki/Programming_language 1
+disallowed
+    https://en.wikipedia.org/wiki/Programming_language 1
+univac
+    https://en.wikipedia.org/wiki/Programming_language 1
+scripting
+    https://en.wikipedia.org/wiki/Programming_language 6
+times
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+primitives
+    https://en.wikipedia.org/wiki/Programming_language 3
+similarly
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+intended
+    https://en.wikipedia.org/wiki/Programming_language 5
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+design
+    https://en.wikipedia.org/wiki/Programming_language 6
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+extra
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+lang
+    https://en.wikipedia.org/wiki/Programming_language 1
+tied
+    https://en.wikipedia.org/wiki/Programming_language 3
+comments
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+automatic
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+bytecodes
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+distinguished
+    https://en.wikipedia.org/wiki/Programming_language 1
+despite
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+declarations
+    https://en.wikipedia.org/wiki/Programming_language 4
+lengths
+    https://en.wikipedia.org/wiki/Programming_language 1
+jframe
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+machines
+    https://en.wikipedia.org/wiki/Programming_language 3
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+respond
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+renamed
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+extending
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+japan
+    https://en.wikipedia.org/wiki/Programming_language 1
+led
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+deallocated
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+defines
+    https://en.wikipedia.org/wiki/Programming_language 4
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+recompilation
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+notation
+    https://en.wikipedia.org/wiki/Programming_language 2
+let
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+pointers
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+defined
+    https://en.wikipedia.org/wiki/Programming_language 11
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+events
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+element
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+portions
+    https://en.wikipedia.org/wiki/Programming_language 1
+displayed
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+began
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+pack
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+each
+    https://en.wikipedia.org/wiki/Programming_language 3
+    https://en.wikipedia.org/wiki/Java_(programming_language) 5
+javascript
+    https://en.wikipedia.org/wiki/Programming_language 4
+labels
+    https://en.wikipedia.org/wiki/Programming_language 1
+input
+    https://en.wikipedia.org/wiki/Programming_language 3
+creating
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+difference
+    https://en.wikipedia.org/wiki/Programming_language 1
+must
+    https://en.wikipedia.org/wiki/Programming_language 6
+    https://en.wikipedia.org/wiki/Java_(programming_language) 6
+styles
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+fqcn
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+document
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+concurrent
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+facto
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+two
+    https://en.wikipedia.org/wiki/Programming_language 3
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+descendants
+    https://en.wikipedia.org/wiki/Programming_language 1
+found
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+desired
+    https://en.wikipedia.org/wiki/Programming_language 2
+defense
+    https://en.wikipedia.org/wiki/Programming_language 1
+does
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 9
+reported
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+formalisms
+    https://en.wikipedia.org/wiki/Programming_language 1
+escape
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+graphic
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+creation
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+latest
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+languages
+    https://en.wikipedia.org/wiki/Programming_language 138
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+combining
+    https://en.wikipedia.org/wiki/Programming_language 2
+team
+    https://en.wikipedia.org/wiki/Programming_language 1
+declaration
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+entirely
+    https://en.wikipedia.org/wiki/Programming_language 1
+marketing
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+filling
+    https://en.wikipedia.org/wiki/Programming_language 1
+japplet
+    https://en.wikipedia.org/wiki/Java_(programming_language) 7
+tedious
+    https://en.wikipedia.org/wiki/Programming_language 1
+remington
+    https://en.wikipedia.org/wiki/Programming_language 1
+needing
+    https://en.wikipedia.org/wiki/Programming_language 1
+had
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+source
+    https://en.wikipedia.org/wiki/Programming_language 3
+    https://en.wikipedia.org/wiki/Java_(programming_language) 10
+secure
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+compile
+    https://en.wikipedia.org/wiki/Programming_language 4
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+late
+    https://en.wikipedia.org/wiki/Programming_language 1
+bias
+    https://en.wikipedia.org/wiki/Programming_language 1
+things
+    https://en.wikipedia.org/wiki/Programming_language 1
+has
+    https://en.wikipedia.org/wiki/Programming_language 12
+    https://en.wikipedia.org/wiki/Java_(programming_language) 11
+keyword
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+starts
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+acquired
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+given
+    https://en.wikipedia.org/wiki/Programming_language 4
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+actual
+    https://en.wikipedia.org/wiki/Programming_language 1
+definite
+    https://en.wikipedia.org/wiki/Programming_language 1
+involves
+    https://en.wikipedia.org/wiki/Programming_language 1
+widely
+    https://en.wikipedia.org/wiki/Programming_language 3
+adapt
+    https://en.wikipedia.org/wiki/Programming_language 1
+batch
+    https://en.wikipedia.org/wiki/Programming_language 1
+insufficient
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+freed
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+uncomfortable
+    https://en.wikipedia.org/wiki/Programming_language 1
+technologies
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+1943
+    https://en.wikipedia.org/wiki/Programming_language 1
+suited
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+involved
+    https://en.wikipedia.org/wiki/Programming_language 1
+converted
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+district
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+overall
+    https://en.wikipedia.org/wiki/Programming_language 1
+1949
+    https://en.wikipedia.org/wiki/Programming_language 1
+page
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+1945
+    https://en.wikipedia.org/wiki/Programming_language 1
+full
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+memory
+    https://en.wikipedia.org/wiki/Java_(programming_language) 16
+cards
+    https://en.wikipedia.org/wiki/Programming_language 1
+aspects
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+impossible
+    https://en.wikipedia.org/wiki/Programming_language 1
+erlang
+    https://en.wikipedia.org/wiki/Programming_language 1
+effort
+    https://en.wikipedia.org/wiki/Programming_language 1
+hartley
+    https://en.wikipedia.org/wiki/Programming_language 1
+1954
+    https://en.wikipedia.org/wiki/Programming_language 2
+1952
+    https://en.wikipedia.org/wiki/Programming_language 1
+brooker
+    https://en.wikipedia.org/wiki/Programming_language 2
+documenting
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+perl
+    https://en.wikipedia.org/wiki/Programming_language 6
+1959
+    https://en.wikipedia.org/wiki/Programming_language 2
+1958
+    https://en.wikipedia.org/wiki/Programming_language 1
+early
+    https://en.wikipedia.org/wiki/Programming_language 7
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+1955
+    https://en.wikipedia.org/wiki/Programming_language 2
+convention
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+hours
+    https://en.wikipedia.org/wiki/Programming_language 1
+c232
+    https://en.wikipedia.org/wiki/Programming_language 1
+center
+    https://en.wikipedia.org/wiki/Programming_language 1
+libraries
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+windows
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+earliest
+    https://en.wikipedia.org/wiki/Programming_language 3
+generic
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+manage
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+bypass
+    https://en.wikipedia.org/wiki/Programming_language 2
+fallen
+    https://en.wikipedia.org/wiki/Programming_language 1
+1961
+    https://en.wikipedia.org/wiki/Programming_language 1
+spared
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+initially
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+short
+    https://en.wikipedia.org/wiki/Programming_language 2
+12345
+    https://en.wikipedia.org/wiki/Programming_language 1
+time
+    https://en.wikipedia.org/wiki/Programming_language 18
+    https://en.wikipedia.org/wiki/Java_(programming_language) 8
+gtk+
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+1968
+    https://en.wikipedia.org/wiki/Programming_language 1
+configurable
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+applications
+    https://en.wikipedia.org/wiki/Programming_language 5
+    https://en.wikipedia.org/wiki/Java_(programming_language) 11
+decidable
+    https://en.wikipedia.org/wiki/Programming_language 1
+measured
+    https://en.wikipedia.org/wiki/Programming_language 1
+interactive
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+program
+    https://en.wikipedia.org/wiki/Programming_language 25
+    https://en.wikipedia.org/wiki/Java_(programming_language) 14
+semantics
+    https://en.wikipedia.org/wiki/Programming_language 16
+three
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+required
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+plankalkül
+    https://en.wikipedia.org/wiki/Programming_language 1
+multi
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+alick
+    https://en.wikipedia.org/wiki/Programming_language 1
+artifact
+    https://en.wikipedia.org/wiki/Programming_language 1
+her
+    https://en.wikipedia.org/wiki/Programming_language 1
+specifically
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+hardware
+    https://en.wikipedia.org/wiki/Programming_language 9
+    https://en.wikipedia.org/wiki/Java_(programming_language) 5
+identifier
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+having
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+standalone
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+dates
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+dynamically
+    https://en.wikipedia.org/wiki/Programming_language 2
+dependencies
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+1987
+    https://en.wikipedia.org/wiki/Programming_language 1
+provide
+    https://en.wikipedia.org/wiki/Programming_language 5
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+allocate
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+latent
+    https://en.wikipedia.org/wiki/Programming_language 1
+primary
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+requires
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+emphasizes
+    https://en.wikipedia.org/wiki/Programming_language 1
+enterprise
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+methods
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 8
+conditionally
+    https://en.wikipedia.org/wiki/Programming_language 1
+reliability
+    https://en.wikipedia.org/wiki/Programming_language 1
+merits
+    https://en.wikipedia.org/wiki/Programming_language 1
+consume
+    https://en.wikipedia.org/wiki/Programming_language 1
+smart
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+undefined
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+anti
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+1998
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+1997
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+computer
+    https://en.wikipedia.org/wiki/Programming_language 20
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+openjdk
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+1995
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+ways
+    https://en.wikipedia.org/wiki/Programming_language 2
+low
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+datatype
+    https://en.wikipedia.org/wiki/Programming_language 1
+1991
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+merely
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+1999
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+meant
+    https://en.wikipedia.org/wiki/Programming_language 1
+means
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+efficient
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+entirety
+    https://en.wikipedia.org/wiki/Programming_language 1
+edsac
+    https://en.wikipedia.org/wiki/Programming_language 2
+centre
+    https://en.wikipedia.org/wiki/Programming_language 1
+consistent
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+performed
+    https://en.wikipedia.org/wiki/Programming_language 1
+ansi
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+naughton
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+january
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+organized
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+char
+    https://en.wikipedia.org/wiki/Programming_language 1
+small
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+before
+    https://en.wikipedia.org/wiki/Programming_language 2
+replace
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+figuratively
+    https://en.wikipedia.org/wiki/Programming_language 1
+launched
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+major
+    https://en.wikipedia.org/wiki/Programming_language 3
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+checked
+    https://en.wikipedia.org/wiki/Programming_language 1
+exiting
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+potential
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+1980s
+    https://en.wikipedia.org/wiki/Programming_language 4
+combination
+    https://en.wikipedia.org/wiki/Programming_language 4
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+created
+    https://en.wikipedia.org/wiki/Programming_language 4
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+tree
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+runtime
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 7
+particular
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+history
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+slashes
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+formal
+    https://en.wikipedia.org/wiki/Programming_language 7
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+overloading
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+creates
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+managing
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+launches
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+applet
+    https://en.wikipedia.org/wiki/Java_(programming_language) 15
+launcher
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+mauchly
+    https://en.wikipedia.org/wiki/Programming_language 1
+request
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+mike
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+values
+    https://en.wikipedia.org/wiki/Programming_language 4
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+part
+    https://en.wikipedia.org/wiki/Programming_language 4
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+their
+    https://en.wikipedia.org/wiki/Programming_language 13
+    https://en.wikipedia.org/wiki/Java_(programming_language) 9
+numeric
+    https://en.wikipedia.org/wiki/Programming_language 1
+constructs
+    https://en.wikipedia.org/wiki/Programming_language 12
+elsewhere
+    https://en.wikipedia.org/wiki/Programming_language 1
+point
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+general
+    https://en.wikipedia.org/wiki/Programming_language 5
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+browser
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+5gl
+    https://en.wikipedia.org/wiki/Programming_language 1
+introduction
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+applets
+    https://en.wikipedia.org/wiki/Java_(programming_language) 6
+process
+    https://en.wikipedia.org/wiki/Programming_language 3
+    https://en.wikipedia.org/wiki/Java_(programming_language) 7
+built
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+alternative
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+threads
+    https://en.wikipedia.org/wiki/Programming_language 1
+third
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+mean
+    https://en.wikipedia.org/wiki/Programming_language 2
+interaction
+    https://en.wikipedia.org/wiki/Programming_language 1
+further
+    https://en.wikipedia.org/wiki/Programming_language 1
+been
+    https://en.wikipedia.org/wiki/Programming_language 15
+    https://en.wikipedia.org/wiki/Java_(programming_language) 7
+mostly
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+stack
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+servlet
+    https://en.wikipedia.org/wiki/Java_(programming_language) 8
+mime
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+evolved
+    https://en.wikipedia.org/wiki/Programming_language 1
+toggled
+    https://en.wikipedia.org/wiki/Programming_language 1
+executing
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+ambiguous
+    https://en.wikipedia.org/wiki/Programming_language 1
+mixins
+    https://en.wikipedia.org/wiki/Programming_language 1
+depending
+    https://en.wikipedia.org/wiki/Programming_language 1
+diverse
+    https://en.wikipedia.org/wiki/Programming_language 1
+knowledge
+    https://en.wikipedia.org/wiki/Programming_language 1
+happen
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+preventing
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+pass
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+going
+    https://en.wikipedia.org/wiki/Programming_language 1
+devised
+    https://en.wikipedia.org/wiki/Programming_language 2
+profile
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+scavenge
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+mainstream
+    https://en.wikipedia.org/wiki/Programming_language 2
+active
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+court
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+appends
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+easy
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+whose
+    https://en.wikipedia.org/wiki/Programming_language 1
+finer
+    https://en.wikipedia.org/wiki/Programming_language 1
+hoff
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+domain
+    https://en.wikipedia.org/wiki/Programming_language 5
+omitted
+    https://en.wikipedia.org/wiki/Programming_language 1
+conventionally
+    https://en.wikipedia.org/wiki/Programming_language 1
+setcontenttype
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+relative
+    https://en.wikipedia.org/wiki/Programming_language 1
+characteristic
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+how
+    https://en.wikipedia.org/wiki/Programming_language 5
+capability
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+implementors
+    https://en.wikipedia.org/wiki/Programming_language 1
+unlike
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+assembly
+    https://en.wikipedia.org/wiki/Programming_language 4
+term
+    https://en.wikipedia.org/wiki/Programming_language 4
+acquisition
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+override
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+embedded
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+business
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+advent
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+possible
+    https://en.wikipedia.org/wiki/Programming_language 4
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+right
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+9th
+    https://en.wikipedia.org/wiki/Programming_language 1
+executable
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+transition
+    https://en.wikipedia.org/wiki/Programming_language 1
+appeals
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+june
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+stage
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+meet
+    https://en.wikipedia.org/wiki/Programming_language 1
+regarded
+    https://en.wikipedia.org/wiki/Programming_language 1
+answer
+    https://en.wikipedia.org/wiki/Programming_language 1
+calls
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+pseudocode
+    https://en.wikipedia.org/wiki/Programming_language 1
+complicated
+    https://en.wikipedia.org/wiki/Programming_language 1
+under
+    https://en.wikipedia.org/wiki/Java_(programming_language) 6
+did
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+represent
+    https://en.wikipedia.org/wiki/Programming_language 1
+dialect
+    https://en.wikipedia.org/wiki/Programming_language 1
+added
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+debugger
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+sometimes
+    https://en.wikipedia.org/wiki/Programming_language 3
+promise
+    https://en.wikipedia.org/wiki/Programming_language 1
+latex
+    https://en.wikipedia.org/wiki/Programming_language 1
+hold
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+later
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+designated
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+prior
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+adding
+    https://en.wikipedia.org/wiki/Programming_language 1
+legal
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+computational
+    https://en.wikipedia.org/wiki/Programming_language 1
+us$20
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+relicensed
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+static
+    https://en.wikipedia.org/wiki/Programming_language 8
+    https://en.wikipedia.org/wiki/Java_(programming_language) 9
+commonly
+    https://en.wikipedia.org/wiki/Programming_language 8
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+finally
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+2001
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+count
+    https://en.wikipedia.org/wiki/Programming_language 1
+2000
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+dismissive
+    https://en.wikipedia.org/wiki/Programming_language 1
+publicly
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+take
+    https://en.wikipedia.org/wiki/Programming_language 1
+thereof
+    https://en.wikipedia.org/wiki/Programming_language 1
+varies
+    https://en.wikipedia.org/wiki/Programming_language 2
+perlis
+    https://en.wikipedia.org/wiki/Programming_language 1
+some
+    https://en.wikipedia.org/wiki/Programming_language 26
+    https://en.wikipedia.org/wiki/Java_(programming_language) 5
+virtual
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 12
+beginning
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+rather
+    https://en.wikipedia.org/wiki/Programming_language 4
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+optimized
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+session
+    https://en.wikipedia.org/wiki/Programming_language 1
+2012
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+2010
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+title
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+states
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+2009
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+2007
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+2006
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+2004
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+fortran
+    https://en.wikipedia.org/wiki/Programming_language 2
+passed
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 5
+featuring
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+just
+    https://en.wikipedia.org/wiki/Programming_language 4
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+pixel
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+human
+    https://en.wikipedia.org/wiki/Programming_language 4
+1950s
+    https://en.wikipedia.org/wiki/Programming_language 3
+notice
+    https://en.wikipedia.org/wiki/Programming_language 1
+owner
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+jury
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+strictly
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+existing
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+print
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+2016
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+although
+    https://en.wikipedia.org/wiki/Programming_language 3
+    https://en.wikipedia.org/wiki/Java_(programming_language) 5
+relocate
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+2015
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+2014
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+2013
+    https://en.wikipedia.org/wiki/Programming_language 1
+servlets
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+decades
+    https://en.wikipedia.org/wiki/Programming_language 1
+showing
+    https://en.wikipedia.org/wiki/Programming_language 1
+president
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+qualified
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+brothers
+    https://en.wikipedia.org/wiki/Programming_language 1
+dropped
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+convert
+    https://en.wikipedia.org/wiki/Programming_language 1
+construct
+    https://en.wikipedia.org/wiki/Programming_language 2
+attempt
+    https://en.wikipedia.org/wiki/Programming_language 1
+soon
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+tablet
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+tape
+    https://en.wikipedia.org/wiki/Programming_language 1
+assertions
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+usually
+    https://en.wikipedia.org/wiki/Programming_language 8
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+text
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+whereas
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+classifies
+    https://en.wikipedia.org/wiki/Programming_language 1
+validation
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+letters
+    https://en.wikipedia.org/wiki/Programming_language 1
+python
+    https://en.wikipedia.org/wiki/Programming_language 3
+made
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+bits
+    https://en.wikipedia.org/wiki/Programming_language 1
+stall
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+classified
+    https://en.wikipedia.org/wiki/Programming_language 4
+being
+    https://en.wikipedia.org/wiki/Programming_language 3
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+loading
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+classification
+    https://en.wikipedia.org/wiki/Programming_language 2
+distributions
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+altered
+    https://en.wikipedia.org/wiki/Programming_language 1
+field
+    https://en.wikipedia.org/wiki/Programming_language 3
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+contents
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+served
+    https://en.wikipedia.org/wiki/Programming_language 1
+invalid
+    https://en.wikipedia.org/wiki/Programming_language 1
+status
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+spawned
+    https://en.wikipedia.org/wiki/Programming_language 1
+trading
+    https://en.wikipedia.org/wiki/Programming_language 1
+server
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 8
+semantic
+    https://en.wikipedia.org/wiki/Programming_language 4
+clients
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+enforcing
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+inference
+    https://en.wikipedia.org/wiki/Programming_language 2
+operates
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+serves
+    https://en.wikipedia.org/wiki/Programming_language 1
+mac
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+products
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+file
+    https://en.wikipedia.org/wiki/Java_(programming_language) 11
+government
+    https://en.wikipedia.org/wiki/Programming_language 1
+known
+    https://en.wikipedia.org/wiki/Programming_language 6
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+stream
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+stand
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+together
+    https://en.wikipedia.org/wiki/Programming_language 1
+may
+    https://en.wikipedia.org/wiki/Programming_language 23
+    https://en.wikipedia.org/wiki/Java_(programming_language) 13
+within
+    https://en.wikipedia.org/wiki/Programming_language 3
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+supplied
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+forward
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+could
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+undetected
+    https://en.wikipedia.org/wiki/Programming_language 1
+lacks
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+trigger
+    https://en.wikipedia.org/wiki/Programming_language 1
+defining
+    https://en.wikipedia.org/wiki/Programming_language 3
+computation
+    https://en.wikipedia.org/wiki/Programming_language 4
+machine
+    https://en.wikipedia.org/wiki/Programming_language 14
+    https://en.wikipedia.org/wiki/Java_(programming_language) 18
+websites
+    https://en.wikipedia.org/wiki/Programming_language 1
+return
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+instance
+    https://en.wikipedia.org/wiki/Programming_language 5
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+use
+    https://en.wikipedia.org/wiki/Programming_language 14
+    https://en.wikipedia.org/wiki/Java_(programming_language) 12
+subject
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+inheritance
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+feel
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+networking
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+main
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 12
+integer
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+supercomputers
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+copyrighted
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+revenue
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+find
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+host
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+international
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+regardless
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+selected
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+alter
+    https://en.wikipedia.org/wiki/Programming_language 1
+artifacts
+    https://en.wikipedia.org/wiki/Programming_language 2
+combine
+    https://en.wikipedia.org/wiki/Programming_language 1
+ideal
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+vbscript
+    https://en.wikipedia.org/wiki/Programming_language 1
+accepts
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+occur
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+difficult
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+includes
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+ideas
+    https://en.wikipedia.org/wiki/Programming_language 5
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+becomes
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+coded
+    https://en.wikipedia.org/wiki/Programming_language 1
+originate
+    https://en.wikipedia.org/wiki/Programming_language 1
+varieties
+    https://en.wikipedia.org/wiki/Programming_language 1
+task
+    https://en.wikipedia.org/wiki/Programming_language 1
+null
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+directions
+    https://en.wikipedia.org/wiki/Programming_language 1
+infer
+    https://en.wikipedia.org/wiki/Programming_language 2
+true
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+flaws
+    https://en.wikipedia.org/wiki/Programming_language 1
+nonetheless
+    https://en.wikipedia.org/wiki/Programming_language 1
+position
+    https://en.wikipedia.org/wiki/Programming_language 2
+oriented
+    https://en.wikipedia.org/wiki/Programming_language 5
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+present
+    https://en.wikipedia.org/wiki/Programming_language 1
+since
+    https://en.wikipedia.org/wiki/Programming_language 4
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+problems
+    https://en.wikipedia.org/wiki/Programming_language 2
+belong
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+paradigm
+    https://en.wikipedia.org/wiki/Programming_language 2
+paradigms
+    https://en.wikipedia.org/wiki/Programming_language 6
+movements
+    https://en.wikipedia.org/wiki/Programming_language 1
+symbols
+    https://en.wikipedia.org/wiki/Programming_language 3
+println
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+evangelist
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+inventing
+    https://en.wikipedia.org/wiki/Programming_language 1
+magnitude
+    https://en.wikipedia.org/wiki/Programming_language 1
+physical
+    https://en.wikipedia.org/wiki/Programming_language 1
+included
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+make
+    https://en.wikipedia.org/wiki/Programming_language 5
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+execution
+    https://en.wikipedia.org/wiki/Programming_language 15
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+designers
+    https://en.wikipedia.org/wiki/Programming_language 3
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+opposed
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+processes
+    https://en.wikipedia.org/wiki/Programming_language 1
+>im
+    https://en.wikipedia.org/wiki/Programming_language 1
+downside
+    https://en.wikipedia.org/wiki/Programming_language 1
+thread
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+segmented
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+exactly
+    https://en.wikipedia.org/wiki/Programming_language 1
+structure
+    https://en.wikipedia.org/wiki/Programming_language 4
+ruby
+    https://en.wikipedia.org/wiki/Programming_language 2
+bytes
+    https://en.wikipedia.org/wiki/Programming_language 1
+circulation
+    https://en.wikipedia.org/wiki/Programming_language 1
+writer
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+invention
+    https://en.wikipedia.org/wiki/Programming_language 1
+properties
+    https://en.wikipedia.org/wiki/Programming_language 1
+interpreting
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+dalvik
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+about
+    https://en.wikipedia.org/wiki/Programming_language 2
+parsing
+    https://en.wikipedia.org/wiki/Programming_language 2
+constraints
+    https://en.wikipedia.org/wiki/Programming_language 1
+branching
+    https://en.wikipedia.org/wiki/Programming_language 1
+crash
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+quotes
+    https://en.wikipedia.org/wiki/Programming_language 1
+accessing
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+character
+    https://en.wikipedia.org/wiki/Programming_language 1
+meaning
+    https://en.wikipedia.org/wiki/Programming_language 8
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+drawing
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+above
+    https://en.wikipedia.org/wiki/Programming_language 1
+magnetic
+    https://en.wikipedia.org/wiki/Programming_language 1
+meaningless
+    https://en.wikipedia.org/wiki/Programming_language 1
+released
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 5
+10
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+goals
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+height
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+symbolic
+    https://en.wikipedia.org/wiki/Programming_language 1
+based
+    https://en.wikipedia.org/wiki/Programming_language 4
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+13
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+pointer
+    https://en.wikipedia.org/wiki/Programming_language 3
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+14
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+modula
+    https://en.wikipedia.org/wiki/Programming_language 1
+15
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+16
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+17
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+18
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+module
+    https://en.wikipedia.org/wiki/Programming_language 1
+19
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+execute
+    https://en.wikipedia.org/wiki/Programming_language 3
+something
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+pillar
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+processing
+    https://en.wikipedia.org/wiki/Programming_language 1
+programs
+    https://en.wikipedia.org/wiki/Programming_language 21
+    https://en.wikipedia.org/wiki/Java_(programming_language) 8
+understandable
+    https://en.wikipedia.org/wiki/Programming_language 1
+20
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+21
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+22
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+23
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+24
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+components
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+functional
+    https://en.wikipedia.org/wiki/Programming_language 4
+25
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+fact
+    https://en.wikipedia.org/wiki/Programming_language 2
+26
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+27
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+28
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+29
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+mid
+    https://en.wikipedia.org/wiki/Programming_language 1
+fundamental
+    https://en.wikipedia.org/wiki/Programming_language 1
+industry
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+eliminate
+    https://en.wikipedia.org/wiki/Programming_language 1
+long
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+pieces
+    https://en.wikipedia.org/wiki/Programming_language 1
+into
+    https://en.wikipedia.org/wiki/Programming_language 8
+    https://en.wikipedia.org/wiki/Java_(programming_language) 5
+supports
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+operating
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+free
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+30
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+31
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+32
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+33
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+34
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+35
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+variables
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+36
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+expression
+    https://en.wikipedia.org/wiki/Programming_language 3
+bother
+    https://en.wikipedia.org/wiki/Programming_language 1
+37
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+though
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+38
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+39
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+denotes
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+many
+    https://en.wikipedia.org/wiki/Programming_language 17
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+people
+    https://en.wikipedia.org/wiki/Programming_language 1
+transportation
+    https://en.wikipedia.org/wiki/Programming_language 1
+controlled
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+actually
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+appear
+    https://en.wikipedia.org/wiki/Programming_language 1
+face
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+getwriter
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+texts
+    https://en.wikipedia.org/wiki/Programming_language 1
+ibm
+    https://en.wikipedia.org/wiki/Programming_language 1
+associated
+    https://en.wikipedia.org/wiki/Programming_language 3
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+holds
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+40
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+41
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+operation
+    https://en.wikipedia.org/wiki/Programming_language 7
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+open
+    https://en.wikipedia.org/wiki/Programming_language 5
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+42
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+43
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+44
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+45
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+46
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+treat
+    https://en.wikipedia.org/wiki/Programming_language 1
+47
+    https://en.wikipedia.org/wiki/Programming_language 7
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+48
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+49
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+numbers
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+rapid
+    https://en.wikipedia.org/wiki/Programming_language 1
+project
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+reputation
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+expressing
+    https://en.wikipedia.org/wiki/Programming_language 1
+inside
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+mainly
+    https://en.wikipedia.org/wiki/Programming_language 2
+whenever
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+modularity
+    https://en.wikipedia.org/wiki/Programming_language 1
+50
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+51
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+five
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+52
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+53
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+commands
+    https://en.wikipedia.org/wiki/Programming_language 4
+54
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+55
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+dispatching
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+56
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+57
+    https://en.wikipedia.org/wiki/Programming_language 1
+constructor
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+aimaco
+    https://en.wikipedia.org/wiki/Programming_language 1
+collection
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+look
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+extends
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+laboratory
+    https://en.wikipedia.org/wiki/Programming_language 1
+pluggable
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+60
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+61
+    https://en.wikipedia.org/wiki/Programming_language 1
+62
+    https://en.wikipedia.org/wiki/Programming_language 1
+63
+    https://en.wikipedia.org/wiki/Programming_language 1
+subclasses
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+internet
+    https://en.wikipedia.org/wiki/Programming_language 2
+64
+    https://en.wikipedia.org/wiki/Programming_language 1
+65
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+allow
+    https://en.wikipedia.org/wiki/Programming_language 8
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+66
+    https://en.wikipedia.org/wiki/Programming_language 1
+installed
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+reasons
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+lawsuit
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+needed
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+iec
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+sgml
+    https://en.wikipedia.org/wiki/Programming_language 1
+update
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+resides
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+modifiers
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+speed
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+printf
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+apple
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+fundamentally
+    https://en.wikipedia.org/wiki/Programming_language 1
+common
+    https://en.wikipedia.org/wiki/Programming_language 4
+linux
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+70
+    https://en.wikipedia.org/wiki/Programming_language 1
+definition
+    https://en.wikipedia.org/wiki/Programming_language 4
+71
+    https://en.wikipedia.org/wiki/Programming_language 1
+72
+    https://en.wikipedia.org/wiki/Programming_language 1
+73
+    https://en.wikipedia.org/wiki/Programming_language 1
+every
+    https://en.wikipedia.org/wiki/Programming_language 4
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+mask
+    https://en.wikipedia.org/wiki/Programming_language 1
+recently
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+again
+    https://en.wikipedia.org/wiki/Programming_language 1
+indeed
+    https://en.wikipedia.org/wiki/Programming_language 1
+artificial
+    https://en.wikipedia.org/wiki/Programming_language 2
+step
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+mark
+    https://en.wikipedia.org/wiki/Programming_language 3
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+trend
+    https://en.wikipedia.org/wiki/Programming_language 2
+claimed
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+axes
+    https://en.wikipedia.org/wiki/Programming_language 1
+during
+    https://en.wikipedia.org/wiki/Programming_language 3
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+degrees
+    https://en.wikipedia.org/wiki/Programming_language 1
+integers
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+subtypes
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+compatible
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+grammar
+    https://en.wikipedia.org/wiki/Programming_language 5
+safety
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+superclass
+    https://en.wikipedia.org/wiki/Java_(programming_language) 5
+enable
+    https://en.wikipedia.org/wiki/Programming_language 1
+90
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+95
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+attempts
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+van
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+still
+    https://en.wikipedia.org/wiki/Programming_language 8
+    https://en.wikipedia.org/wiki/Java_(programming_language) 5
+arise
+    https://en.wikipedia.org/wiki/Programming_language 1
+agree
+    https://en.wikipedia.org/wiki/Programming_language 1
+benchmark
+    https://en.wikipedia.org/wiki/Programming_language 1
+wora
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+filing
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+itself
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+versions
+    https://en.wikipedia.org/wiki/Java_(programming_language) 5
+among
+    https://en.wikipedia.org/wiki/Programming_language 2
+terminate
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+theory
+    https://en.wikipedia.org/wiki/Programming_language 2
+specifies
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+internal
+    https://en.wikipedia.org/wiki/Programming_language 3
+pascal
+    https://en.wikipedia.org/wiki/Programming_language 2
+requests
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+specified
+    https://en.wikipedia.org/wiki/Programming_language 6
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+across
+    https://en.wikipedia.org/wiki/Programming_language 1
+orthogonal
+    https://en.wikipedia.org/wiki/Programming_language 1
+moreover
+    https://en.wikipedia.org/wiki/Programming_language 1
+causes
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+installation
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+writing
+    https://en.wikipedia.org/wiki/Programming_language 2
+federal
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+verify
+    https://en.wikipedia.org/wiki/Programming_language 1
+event
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+include
+    https://en.wikipedia.org/wiki/Programming_language 8
+    https://en.wikipedia.org/wiki/Java_(programming_language) 5
+simplest
+    https://en.wikipedia.org/wiki/Programming_language 1
+abstract
+    https://en.wikipedia.org/wiki/Programming_language 1
+converts
+    https://en.wikipedia.org/wiki/Programming_language 1
+consolidation
+    https://en.wikipedia.org/wiki/Programming_language 1
+anonymous
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+cannot
+    https://en.wikipedia.org/wiki/Programming_language 4
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+threading
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+runs
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+first
+    https://en.wikipedia.org/wiki/Programming_language 9
+    https://en.wikipedia.org/wiki/Java_(programming_language) 6
+fewer
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+float
+    https://en.wikipedia.org/wiki/Programming_language 1
+minority
+    https://en.wikipedia.org/wiki/Programming_language 1
+descending
+    https://en.wikipedia.org/wiki/Programming_language 1
+reference
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+optimisation
+    https://en.wikipedia.org/wiki/Programming_language 1
+spite
+    https://en.wikipedia.org/wiki/Programming_language 1
+j2ee
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+inferred
+    https://en.wikipedia.org/wiki/Programming_language 2
+from
+    https://en.wikipedia.org/wiki/Programming_language 27
+    https://en.wikipedia.org/wiki/Java_(programming_language) 25
+html
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 7
+offset
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+ill
+    https://en.wikipedia.org/wiki/Programming_language 1
+commitment
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+finished
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+published
+    https://en.wikipedia.org/wiki/Programming_language 2
+failed
+    https://en.wikipedia.org/wiki/Programming_language 1
+sequence
+    https://en.wikipedia.org/wiki/Programming_language 1
+arthur
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+>>
+    https://en.wikipedia.org/wiki/Programming_language 1
+solving
+    https://en.wikipedia.org/wiki/Programming_language 1
+configuration
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+mercury
+    https://en.wikipedia.org/wiki/Programming_language 2
+scientific
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+interact
+    https://en.wikipedia.org/wiki/Programming_language 1
+statements
+    https://en.wikipedia.org/wiki/Programming_language 3
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+error
+    https://en.wikipedia.org/wiki/Programming_language 6
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+platform
+    https://en.wikipedia.org/wiki/Java_(programming_language) 13
+network
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+operations
+    https://en.wikipedia.org/wiki/Programming_language 7
+public
+    https://en.wikipedia.org/wiki/Java_(programming_language) 16
+paper
+    https://en.wikipedia.org/wiki/Programming_language 1
+array
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+parameter
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+1990s
+    https://en.wikipedia.org/wiki/Programming_language 1
+value
+    https://en.wikipedia.org/wiki/Programming_language 4
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+inc
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+enforced
+    https://en.wikipedia.org/wiki/Programming_language 1
+programmable
+    https://en.wikipedia.org/wiki/Programming_language 1
+constructed
+    https://en.wikipedia.org/wiki/Programming_language 2
+computations
+    https://en.wikipedia.org/wiki/Programming_language 1
+soundness
+    https://en.wikipedia.org/wiki/Programming_language 1
+spent
+    https://en.wikipedia.org/wiki/Programming_language 1
+resources
+    https://en.wikipedia.org/wiki/Programming_language 1
+instead
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+ultimately
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+controversy
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+command
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+int
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+performance
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+trade
+    https://en.wikipedia.org/wiki/Programming_language 1
+currently
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+variable
+    https://en.wikipedia.org/wiki/Programming_language 4
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+growth
+    https://en.wikipedia.org/wiki/Programming_language 1
+normally
+    https://en.wikipedia.org/wiki/Programming_language 1
+exception
+    https://en.wikipedia.org/wiki/Programming_language 3
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+references
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+year
+    https://en.wikipedia.org/wiki/Programming_language 1
+allowed
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+objects
+    https://en.wikipedia.org/wiki/Java_(programming_language) 11
+setvisible
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+building
+    https://en.wikipedia.org/wiki/Programming_language 1
+printwriter
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+visual
+    https://en.wikipedia.org/wiki/Programming_language 1
+because
+    https://en.wikipedia.org/wiki/Programming_language 4
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+ioexception
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+definitions
+    https://en.wikipedia.org/wiki/Programming_language 1
+ran
+    https://en.wikipedia.org/wiki/Programming_language 1
+invented
+    https://en.wikipedia.org/wiki/Programming_language 2
+packaged
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+internally
+    https://en.wikipedia.org/wiki/Programming_language 1
+fairly
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+google
+    https://en.wikipedia.org/wiki/Java_(programming_language) 5
+community
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+packages
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+version
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+adapted
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+contains
+    https://en.wikipedia.org/wiki/Programming_language 3
+    https://en.wikipedia.org/wiki/Java_(programming_language) 7
+extensions
+    https://en.wikipedia.org/wiki/Programming_language 1
+selection
+    https://en.wikipedia.org/wiki/Programming_language 1
+returns
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+shortly
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+appropriate
+    https://en.wikipedia.org/wiki/Programming_language 2
+providing
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+least
+    https://en.wikipedia.org/wiki/Programming_language 1
+manual
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+smartphones
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+behavior
+    https://en.wikipedia.org/wiki/Programming_language 8
+close
+    https://en.wikipedia.org/wiki/Java_(programming_language) 5
+computers
+    https://en.wikipedia.org/wiki/Programming_language 3
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+sweep
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+annotation
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+haskell
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+fostering
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+copyrights
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+logical
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+textual
+    https://en.wikipedia.org/wiki/Programming_language 6
+newer
+    https://en.wikipedia.org/wiki/Programming_language 1
+swing
+    https://en.wikipedia.org/wiki/Java_(programming_language) 8
+grammars
+    https://en.wikipedia.org/wiki/Programming_language 1
+ericsson
+    https://en.wikipedia.org/wiki/Programming_language 1
+unrelated
+    https://en.wikipedia.org/wiki/Programming_language 1
+calling
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+routines
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+aerospace
+    https://en.wikipedia.org/wiki/Programming_language 1
+instructions
+    https://en.wikipedia.org/wiki/Programming_language 3
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+servletrequest
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+communicate
+    https://en.wikipedia.org/wiki/Programming_language 2
+iso
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+inputs
+    https://en.wikipedia.org/wiki/Programming_language 1
+moved
+    https://en.wikipedia.org/wiki/Programming_language 1
+official
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+acm
+    https://en.wikipedia.org/wiki/Programming_language 1
+j2me
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+generated
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+incorporated
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+2gl
+    https://en.wikipedia.org/wiki/Programming_language 1
+replacements
+    https://en.wikipedia.org/wiki/Programming_language 1
+nonexistent
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+ada
+    https://en.wikipedia.org/wiki/Programming_language 3
+add
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+educational
+    https://en.wikipedia.org/wiki/Programming_language 1
+need
+    https://en.wikipedia.org/wiki/Programming_language 3
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+finite
+    https://en.wikipedia.org/wiki/Programming_language 2
+wrote
+    https://en.wikipedia.org/wiki/Programming_language 2
+ferranti
+    https://en.wikipedia.org/wiki/Programming_language 1
+originally
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+its
+    https://en.wikipedia.org/wiki/Programming_language 11
+    https://en.wikipedia.org/wiki/Java_(programming_language) 10
+often
+    https://en.wikipedia.org/wiki/Programming_language 10
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+konrad
+    https://en.wikipedia.org/wiki/Programming_language 1
+users
+    https://en.wikipedia.org/wiki/Programming_language 5
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+article
+    https://en.wikipedia.org/wiki/Programming_language 1
+parser
+    https://en.wikipedia.org/wiki/Programming_language 1
+casts
+    https://en.wikipedia.org/wiki/Programming_language 1
+shell
+    https://en.wikipedia.org/wiki/Programming_language 2
+http
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+interleaves
+    https://en.wikipedia.org/wiki/Programming_language 1
+decimal
+    https://en.wikipedia.org/wiki/Programming_language 1
+useful
+    https://en.wikipedia.org/wiki/Programming_language 2
+private
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+united
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+production
+    https://en.wikipedia.org/wiki/Programming_language 1
+standardization
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+directory
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+prevent
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+punched
+    https://en.wikipedia.org/wiki/Programming_language 1
+appended
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+responsible
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+scope
+    https://en.wikipedia.org/wiki/Programming_language 1
+end
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+lines
+    https://en.wikipedia.org/wiki/Programming_language 1
+laptops
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+rich
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+label
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+message
+    https://en.wikipedia.org/wiki/Programming_language 1
+manchester
+    https://en.wikipedia.org/wiki/Programming_language 4
+special
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+noted
+    https://en.wikipedia.org/wiki/Programming_language 1
+environment
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+referenced
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+arises
+    https://en.wikipedia.org/wiki/Programming_language 1
+achieved
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+detected
+    https://en.wikipedia.org/wiki/Programming_language 3
+family
+    https://en.wikipedia.org/wiki/Programming_language 3
+referred
+    https://en.wikipedia.org/wiki/Programming_language 1
+albeit
+    https://en.wikipedia.org/wiki/Programming_language 1
+c++
+    https://en.wikipedia.org/wiki/Programming_language 3
+    https://en.wikipedia.org/wiki/Java_(programming_language) 10
+copyright
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+called
+    https://en.wikipedia.org/wiki/Programming_language 12
+    https://en.wikipedia.org/wiki/Java_(programming_language) 15
+told
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+backus
+    https://en.wikipedia.org/wiki/Programming_language 2
+configurations
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+release
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+arithmetic
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+occurs
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+accessed
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+faults
+    https://en.wikipedia.org/wiki/Programming_language 1
+years
+    https://en.wikipedia.org/wiki/Programming_language 1
+number
+    https://en.wikipedia.org/wiki/Programming_language 9
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+responding
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+genericservlet
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+centers
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+property
+    https://en.wikipedia.org/wiki/Programming_language 1
+judge
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+manipulate
+    https://en.wikipedia.org/wiki/Programming_language 1
+algorithm
+    https://en.wikipedia.org/wiki/Programming_language 3
+similar
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+programmer
+    https://en.wikipedia.org/wiki/Programming_language 11
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+specify
+    https://en.wikipedia.org/wiki/Programming_language 4
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+distributed
+    https://en.wikipedia.org/wiki/Programming_language 1
+handle
+    https://en.wikipedia.org/wiki/Programming_language 1
+thousands
+    https://en.wikipedia.org/wiki/Programming_language 2
+forth
+    https://en.wikipedia.org/wiki/Programming_language 1
+edsger
+    https://en.wikipedia.org/wiki/Programming_language 2
+exit
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+system
+    https://en.wikipedia.org/wiki/Programming_language 10
+    https://en.wikipedia.org/wiki/Java_(programming_language) 11
+compose
+    https://en.wikipedia.org/wiki/Programming_language 1
+programmed
+    https://en.wikipedia.org/wiki/Programming_language 1
+partial
+    https://en.wikipedia.org/wiki/Programming_language 1
+authors
+    https://en.wikipedia.org/wiki/Programming_language 3
+algorithms
+    https://en.wikipedia.org/wiki/Programming_language 3
+other
+    https://en.wikipedia.org/wiki/Programming_language 17
+    https://en.wikipedia.org/wiki/Java_(programming_language) 9
+indicated
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+aim
+    https://en.wikipedia.org/wiki/Programming_language 1
+against
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+local
+    https://en.wikipedia.org/wiki/Programming_language 1
+portability
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+valid
+    https://en.wikipedia.org/wiki/Programming_language 2
+indicates
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+rights
+    https://en.wikipedia.org/wiki/Programming_language 1
+electronic
+    https://en.wikipedia.org/wiki/Programming_language 1
+share
+    https://en.wikipedia.org/wiki/Programming_language 2
+assertion
+    https://en.wikipedia.org/wiki/Programming_language 1
+pianos
+    https://en.wikipedia.org/wiki/Programming_language 1
+television
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+identifiers
+    https://en.wikipedia.org/wiki/Programming_language 1
+j2se
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+prototype
+    https://en.wikipedia.org/wiki/Programming_language 1
+stored
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+logic
+    https://en.wikipedia.org/wiki/Programming_language 3
+francisco
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+modifier
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+precision
+    https://en.wikipedia.org/wiki/Programming_language 2
+implicitly
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+body
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+rmi
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+points
+    https://en.wikipedia.org/wiki/Programming_language 1
+pages
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+declares
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+etc
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+windowconstants
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+implemented
+    https://en.wikipedia.org/wiki/Programming_language 4
+cable
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+all
+    https://en.wikipedia.org/wiki/Programming_language 13
+    https://en.wikipedia.org/wiki/Java_(programming_language) 9
+always
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+border
+    https://en.wikipedia.org/wiki/Programming_language 1
+new
+    https://en.wikipedia.org/wiki/Programming_language 8
+    https://en.wikipedia.org/wiki/Java_(programming_language) 5
+settings
+    https://en.wikipedia.org/wiki/Programming_language 1
+took
+    https://en.wikipedia.org/wiki/Programming_language 1
+baghdad
+    https://en.wikipedia.org/wiki/Programming_language 1
+read
+    https://en.wikipedia.org/wiki/Programming_language 1
+markup
+    https://en.wikipedia.org/wiki/Programming_language 4
+below
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+already
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+applicable
+    https://en.wikipedia.org/wiki/Programming_language 2
+shall
+    https://en.wikipedia.org/wiki/Programming_language 1
+positions
+    https://en.wikipedia.org/wiki/Programming_language 1
+real
+    https://en.wikipedia.org/wiki/Programming_language 1
+tool
+    https://en.wikipedia.org/wiki/Programming_language 1
+unit
+    https://en.wikipedia.org/wiki/Programming_language 1
+rigorous
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+hybrid
+    https://en.wikipedia.org/wiki/Programming_language 1
+apis
+    https://en.wikipedia.org/wiki/Java_(programming_language) 7
+contemporary
+    https://en.wikipedia.org/wiki/Programming_language 1
+alan
+    https://en.wikipedia.org/wiki/Programming_language 1
+remedied
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+confusingly
+    https://en.wikipedia.org/wiki/Programming_language 1
+typing
+    https://en.wikipedia.org/wiki/Programming_language 6
+unix
+    https://en.wikipedia.org/wiki/Programming_language 2
+boundary
+    https://en.wikipedia.org/wiki/Programming_language 1
+influenced
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+running
+    https://en.wikipedia.org/wiki/Programming_language 2
+autocode
+    https://en.wikipedia.org/wiki/Programming_language 7
+and
+    https://en.wikipedia.org/wiki/Programming_language 128
+    https://en.wikipedia.org/wiki/Java_(programming_language) 99
+define
+    https://en.wikipedia.org/wiki/Programming_language 2
+predict
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+universal
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+declared
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+deliberately
+    https://en.wikipedia.org/wiki/Programming_language 1
+abstraction
+    https://en.wikipedia.org/wiki/Programming_language 2
+requirement
+    https://en.wikipedia.org/wiki/Programming_language 1
+specific
+    https://en.wikipedia.org/wiki/Programming_language 5
+    https://en.wikipedia.org/wiki/Java_(programming_language) 7
+any
+    https://en.wikipedia.org/wiki/Programming_language 4
+    https://en.wikipedia.org/wiki/Java_(programming_language) 11
+chomsky
+    https://en.wikipedia.org/wiki/Programming_language 1
+caller
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+application
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 8
+compilation
+    https://en.wikipedia.org/wiki/Programming_language 4
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+inherited
+    https://en.wikipedia.org/wiki/Java_(programming_language) 5
+punctuation
+    https://en.wikipedia.org/wiki/Programming_language 1
+communicated
+    https://en.wikipedia.org/wiki/Programming_language 1
+unsigned
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+until
+    https://en.wikipedia.org/wiki/Programming_language 3
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+xslt
+    https://en.wikipedia.org/wiki/Programming_language 1
+servletresponse
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+strategy
+    https://en.wikipedia.org/wiki/Programming_language 1
+reversed
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+forms
+    https://en.wikipedia.org/wiki/Programming_language 4
+reason
+    https://en.wikipedia.org/wiki/Programming_language 1
+developments
+    https://en.wikipedia.org/wiki/Programming_language 1
+thought
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+compiling
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+anywhere
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+professional
+    https://en.wikipedia.org/wiki/Programming_language 1
+companies
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+java
+    https://en.wikipedia.org/wiki/Programming_language 9
+    https://en.wikipedia.org/wiki/Java_(programming_language) 148
+english
+    https://en.wikipedia.org/wiki/Programming_language 3
+jar
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+represented
+    https://en.wikipedia.org/wiki/Programming_language 3
+fully
+    https://en.wikipedia.org/wiki/Programming_language 3
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+microcontrollers
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+eliminated
+    https://en.wikipedia.org/wiki/Programming_language 1
+using
+    https://en.wikipedia.org/wiki/Programming_language 11
+    https://en.wikipedia.org/wiki/Java_(programming_language) 8
+verifying
+    https://en.wikipedia.org/wiki/Programming_language 1
+remain
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+containing
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+investigating
+    https://en.wikipedia.org/wiki/Programming_language 1
+width=
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+argues
+    https://en.wikipedia.org/wiki/Programming_language 1
+letter
+    https://en.wikipedia.org/wiki/Programming_language 1
+calculations
+    https://en.wikipedia.org/wiki/Programming_language 1
+bytecode
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 11
+complexity
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+feels
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+increased
+    https://en.wikipedia.org/wiki/Programming_language 2
+argued
+    https://en.wikipedia.org/wiki/Programming_language 1
+another
+    https://en.wikipedia.org/wiki/Programming_language 4
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+automatically
+    https://en.wikipedia.org/wiki/Programming_language 4
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+predecessor
+    https://en.wikipedia.org/wiki/Programming_language 1
+literal
+    https://en.wikipedia.org/wiki/Programming_language 1
+default
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+diversity
+    https://en.wikipedia.org/wiki/Programming_language 1
+releasing
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+varying
+    https://en.wikipedia.org/wiki/Programming_language 1
+are
+    https://en.wikipedia.org/wiki/Programming_language 66
+    https://en.wikipedia.org/wiki/Java_(programming_language) 30
+vendor
+    https://en.wikipedia.org/wiki/Programming_language 2
+code=
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+delimiters
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+taken
+    https://en.wikipedia.org/wiki/Programming_language 2
+grace
+    https://en.wikipedia.org/wiki/Programming_language 1
+came
+    https://en.wikipedia.org/wiki/Programming_language 1
+structured
+    https://en.wikipedia.org/wiki/Programming_language 4
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+where
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+attribute
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+mechanism
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+popular
+    https://en.wikipedia.org/wiki/Programming_language 5
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+arm
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+vice
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+reynolds
+    https://en.wikipedia.org/wiki/Programming_language 1
+structures
+    https://en.wikipedia.org/wiki/Programming_language 3
+lacking
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+delegates
+    https://en.wikipedia.org/wiki/Programming_language 1
+describes
+    https://en.wikipedia.org/wiki/Programming_language 2
+refinements
+    https://en.wikipedia.org/wiki/Programming_language 1
+abstractions
+    https://en.wikipedia.org/wiki/Programming_language 1
+jdk
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+call
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+such
+    https://en.wikipedia.org/wiki/Programming_language 15
+    https://en.wikipedia.org/wiki/Java_(programming_language) 10
+diagnostics
+    https://en.wikipedia.org/wiki/Programming_language 1
+plugin
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+absolute
+    https://en.wikipedia.org/wiki/Programming_language 2
+syntactically
+    https://en.wikipedia.org/wiki/Programming_language 5
+describe
+    https://en.wikipedia.org/wiki/Programming_language 1
+stringbuilder
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+understood
+    https://en.wikipedia.org/wiki/Programming_language 1
+supported
+    https://en.wikipedia.org/wiki/Java_(programming_language) 7
+through
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 5
+resulted
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+featured
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+becoming
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+microsystems
+    https://en.wikipedia.org/wiki/Java_(programming_language) 8
+documents
+    https://en.wikipedia.org/wiki/Programming_language 1
+run
+    https://en.wikipedia.org/wiki/Programming_language 8
+    https://en.wikipedia.org/wiki/Java_(programming_language) 14
+remains
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+enclosing
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+microsoft
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+individuals
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+operator
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+research
+    https://en.wikipedia.org/wiki/Programming_language 4
+lifecycle
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+debate
+    https://en.wikipedia.org/wiki/Programming_language 2
+features
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 5
+either
+    https://en.wikipedia.org/wiki/Programming_language 3
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+view
+    https://en.wikipedia.org/wiki/Programming_language 1
+generics
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+cambridge
+    https://en.wikipedia.org/wiki/Programming_language 1
+ecma
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+results
+    https://en.wikipedia.org/wiki/Programming_language 1
+those
+    https://en.wikipedia.org/wiki/Programming_language 4
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+correctness
+    https://en.wikipedia.org/wiki/Programming_language 1
+unreachable
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+might
+    https://en.wikipedia.org/wiki/Programming_language 3
+significant
+    https://en.wikipedia.org/wiki/Programming_language 2
+engineering
+    https://en.wikipedia.org/wiki/Programming_language 1
+expressions
+    https://en.wikipedia.org/wiki/Programming_language 9
+longer
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+improving
+    https://en.wikipedia.org/wiki/Programming_language 1
+ignorance
+    https://en.wikipedia.org/wiki/Programming_language 1
+sued
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+name
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 14
+detecting
+    https://en.wikipedia.org/wiki/Programming_language 1
+selling
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+fields
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+parameters
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+next
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+benefits
+    https://en.wikipedia.org/wiki/Programming_language 1
+string
+    https://en.wikipedia.org/wiki/Programming_language 8
+    https://en.wikipedia.org/wiki/Java_(programming_language) 17
+import
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+hidden
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+occupy
+    https://en.wikipedia.org/wiki/Programming_language 1
+android
+    https://en.wikipedia.org/wiki/Java_(programming_language) 13
+classes
+    https://en.wikipedia.org/wiki/Java_(programming_language) 19
+description
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+edition
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+non
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+not
+    https://en.wikipedia.org/wiki/Programming_language 22
+    https://en.wikipedia.org/wiki/Java_(programming_language) 19
+now
+    https://en.wikipedia.org/wiki/Programming_language 2
+statement
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+debugging
+    https://en.wikipedia.org/wiki/Programming_language 1
+trademark
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+supporting
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+derived
+    https://en.wikipedia.org/wiki/Programming_language 1
+analogous
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+ensures
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+interfaces
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+infringed
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+green
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+was
+    https://en.wikipedia.org/wiki/Programming_language 21
+    https://en.wikipedia.org/wiki/Java_(programming_language) 12
+derives
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+suddenly
+    https://en.wikipedia.org/wiki/Programming_language 1
+way
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+what
+    https://en.wikipedia.org/wiki/Programming_language 6
+jacquard
+    https://en.wikipedia.org/wiki/Programming_language 1
+zuse
+    https://en.wikipedia.org/wiki/Programming_language 1
+refer
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+vulnerabilities
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+window
+    https://en.wikipedia.org/wiki/Java_(programming_language) 5
+awt
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+container
+    https://en.wikipedia.org/wiki/Java_(programming_language) 7
+drawstring
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+developers
+    https://en.wikipedia.org/wiki/Java_(programming_language) 6
+quickly
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+usage
+    https://en.wikipedia.org/wiki/Programming_language 6
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+deprecated
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+when
+    https://en.wikipedia.org/wiki/Programming_language 8
+    https://en.wikipedia.org/wiki/Java_(programming_language) 9
+cast
+    https://en.wikipedia.org/wiki/Programming_language 2
+jit
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+statically
+    https://en.wikipedia.org/wiki/Programming_language 6
+largely
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+broad
+    https://en.wikipedia.org/wiki/Programming_language 1
+participating
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+embed
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+1960s
+    https://en.wikipedia.org/wiki/Programming_language 2
+greater
+    https://en.wikipedia.org/wiki/Programming_language 2
+case
+    https://en.wikipedia.org/wiki/Programming_language 5
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+generation
+    https://en.wikipedia.org/wiki/Programming_language 6
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+item
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+esoteric
+    https://en.wikipedia.org/wiki/Programming_language 1
+chained
+    https://en.wikipedia.org/wiki/Programming_language 1
+explicit
+    https://en.wikipedia.org/wiki/Programming_language 3
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+ships
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+determined
+    https://en.wikipedia.org/wiki/Programming_language 1
+refined
+    https://en.wikipedia.org/wiki/Programming_language 1
+style
+    https://en.wikipedia.org/wiki/Java_(programming_language) 6
+participation
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+dividing
+    https://en.wikipedia.org/wiki/Programming_language 1
+purely
+    https://en.wikipedia.org/wiki/Programming_language 1
+implicit
+    https://en.wikipedia.org/wiki/Programming_language 2
+explicitly
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+study
+    https://en.wikipedia.org/wiki/Programming_language 1
+widget
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+sentences
+    https://en.wikipedia.org/wiki/Programming_language 1
+portion
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+direct
+    https://en.wikipedia.org/wiki/Programming_language 5
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+pattern
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+leaks
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+modern
+    https://en.wikipedia.org/wiki/Programming_language 2
+web
+    https://en.wikipedia.org/wiki/Java_(programming_language) 11
+occasionally
+    https://en.wikipedia.org/wiki/Programming_language 1
+relieved
+    https://en.wikipedia.org/wiki/Programming_language 1
+architecture
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+enables
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+porting
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+more
+    https://en.wikipedia.org/wiki/Programming_language 13
+    https://en.wikipedia.org/wiki/Java_(programming_language) 6
+display
+    https://en.wikipedia.org/wiki/Java_(programming_language) 8
+meanings
+    https://en.wikipedia.org/wiki/Programming_language 2
+great
+    https://en.wikipedia.org/wiki/Programming_language 1
+wrong
+    https://en.wikipedia.org/wiki/Programming_language 1
+organization
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+width
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+momentarily
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+broadly
+    https://en.wikipedia.org/wiki/Programming_language 1
+superseded
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+certain
+    https://en.wikipedia.org/wiki/Programming_language 5
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+instantiates
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+distinction
+    https://en.wikipedia.org/wiki/Programming_language 2
+section
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+simple
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+used
+    https://en.wikipedia.org/wiki/Programming_language 27
+    https://en.wikipedia.org/wiki/Java_(programming_language) 10
+compilers
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+influence
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+looks
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+few
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+described
+    https://en.wikipedia.org/wiki/Programming_language 3
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+marked
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+package
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+naur
+    https://en.wikipedia.org/wiki/Programming_language 1
+jni
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+kind
+    https://en.wikipedia.org/wiki/Programming_language 1
+opened
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+inner
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+exceptions
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+both
+    https://en.wikipedia.org/wiki/Programming_language 7
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+most
+    https://en.wikipedia.org/wiki/Programming_language 19
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+important
+    https://en.wikipedia.org/wiki/Programming_language 4
+refers
+    https://en.wikipedia.org/wiki/Programming_language 2
+outside
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+effect
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+sums
+    https://en.wikipedia.org/wiki/Programming_language 1
+option
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+who
+    https://en.wikipedia.org/wiki/Programming_language 1
+game
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+determines
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+alsup
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+jlabel
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+alone
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+database
+    https://en.wikipedia.org/wiki/Programming_language 1
+along
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+looms
+    https://en.wikipedia.org/wiki/Programming_language 1
+parallel
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+consoles
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+designed
+    https://en.wikipedia.org/wiki/Programming_language 7
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+subvert
+    https://en.wikipedia.org/wiki/Programming_language 1
+san
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+rest
+    https://en.wikipedia.org/wiki/Programming_language 1
+amount
+    https://en.wikipedia.org/wiki/Programming_language 1
+original
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+comply
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+assignment
+    https://en.wikipedia.org/wiki/Programming_language 1
+saw
+    https://en.wikipedia.org/wiki/Programming_language 1
+also
+    https://en.wikipedia.org/wiki/Programming_language 13
+    https://en.wikipedia.org/wiki/Java_(programming_language) 9
+say
+    https://en.wikipedia.org/wiki/Programming_language 1
+approaches
+    https://en.wikipedia.org/wiki/Programming_language 2
+differ
+    https://en.wikipedia.org/wiki/Programming_language 2
+contained
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+various
+    https://en.wikipedia.org/wiki/Programming_language 4
+approached
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+uses
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 5
+latter
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+front
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+hopper
+    https://en.wikipedia.org/wiki/Programming_language 2
+user
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+treating
+    https://en.wikipedia.org/wiki/Programming_language 1
+simply
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+equivalent
+    https://en.wikipedia.org/wiki/Programming_language 1
+asterisk
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+switches
+    https://en.wikipedia.org/wiki/Programming_language 1
+conversely
+    https://en.wikipedia.org/wiki/Programming_language 1
+offer
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+rand
+    https://en.wikipedia.org/wiki/Programming_language 1
+bar
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+complex
+    https://en.wikipedia.org/wiki/Programming_language 1
+rank
+    https://en.wikipedia.org/wiki/Programming_language 1
+evaluated
+    https://en.wikipedia.org/wiki/Programming_language 1
+jre
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+addition
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+1800s
+    https://en.wikipedia.org/wiki/Programming_language 1
+vein
+    https://en.wikipedia.org/wiki/Programming_language 1
+documentation
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+hierarchy
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+ancestor
+    https://en.wikipedia.org/wiki/Programming_language 1
+an
+    https://en.wikipedia.org/wiki/Programming_language 43
+    https://en.wikipedia.org/wiki/Java_(programming_language) 35
+height=
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+as
+    https://en.wikipedia.org/wiki/Programming_language 55
+    https://en.wikipedia.org/wiki/Java_(programming_language) 42
+at
+    https://en.wikipedia.org/wiki/Programming_language 18
+    https://en.wikipedia.org/wiki/Java_(programming_language) 7
+interpretation
+    https://en.wikipedia.org/wiki/Programming_language 1
+intermediate
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+sdk
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+formed
+    https://en.wikipedia.org/wiki/Programming_language 2
+optimizations
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+strong
+    https://en.wikipedia.org/wiki/Programming_language 3
+deal
+    https://en.wikipedia.org/wiki/Programming_language 1
+be
+    https://en.wikipedia.org/wiki/Programming_language 55
+    https://en.wikipedia.org/wiki/Java_(programming_language) 30
+traits
+    https://en.wikipedia.org/wiki/Programming_language 1
+scheme
+    https://en.wikipedia.org/wiki/Programming_language 2
+jsp
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+affect
+    https://en.wikipedia.org/wiki/Programming_language 1
+rexx
+    https://en.wikipedia.org/wiki/Programming_language 1
+glennie
+    https://en.wikipedia.org/wiki/Programming_language 1
+javadoc
+    https://en.wikipedia.org/wiki/Java_(programming_language) 6
+see
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+communications
+    https://en.wikipedia.org/wiki/Programming_language 1
+responsibility
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+systems
+    https://en.wikipedia.org/wiki/Programming_language 6
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+by
+    https://en.wikipedia.org/wiki/Programming_language 38
+    https://en.wikipedia.org/wiki/Java_(programming_language) 38
+matic
+    https://en.wikipedia.org/wiki/Programming_language 3
+popularity
+    https://en.wikipedia.org/wiki/Programming_language 2
+jtc
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+whom
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+3gl
+    https://en.wikipedia.org/wiki/Programming_language 1
+customers
+    https://en.wikipedia.org/wiki/Programming_language 1
+panel
+    https://en.wikipedia.org/wiki/Programming_language 1
+licences
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+blurring
+    https://en.wikipedia.org/wiki/Programming_language 1
+enabling
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+charge
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+contain
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+set
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 5
+incorrect
+    https://en.wikipedia.org/wiki/Programming_language 2
+fastest
+    https://en.wikipedia.org/wiki/Programming_language 1
+words
+    https://en.wikipedia.org/wiki/Programming_language 2
+alternate
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+familiar
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+hybrids
+    https://en.wikipedia.org/wiki/Programming_language 1
+gaps
+    https://en.wikipedia.org/wiki/Programming_language 1
+instructed
+    https://en.wikipedia.org/wiki/Programming_language 1
+withdrew
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+cobol
+    https://en.wikipedia.org/wiki/Programming_language 2
+undecidable
+    https://en.wikipedia.org/wiki/Programming_language 1
+essential
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+de
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+performs
+    https://en.wikipedia.org/wiki/Programming_language 1
+javaserver
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+language
+    https://en.wikipedia.org/wiki/Programming_language 101
+    https://en.wikipedia.org/wiki/Java_(programming_language) 16
+sites
+    https://en.wikipedia.org/wiki/Programming_language 1
+graphics
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+do
+    https://en.wikipedia.org/wiki/Programming_language 8
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+developed
+    https://en.wikipedia.org/wiki/Programming_language 10
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+familial
+    https://en.wikipedia.org/wiki/Programming_language 1
+javax
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+won
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+preceded
+    https://en.wikipedia.org/wiki/Programming_language 1
+programming
+    https://en.wikipedia.org/wiki/Programming_language 115
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+jvm
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+which
+    https://en.wikipedia.org/wiki/Programming_language 31
+    https://en.wikipedia.org/wiki/Java_(programming_language) 20
+ee
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+needs
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+typically
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 8
+garbage
+    https://en.wikipedia.org/wiki/Java_(programming_language) 10
+turing
+    https://en.wikipedia.org/wiki/Programming_language 3
+g1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+browsers
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+unstable
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+never
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+she
+    https://en.wikipedia.org/wiki/Programming_language 1
+piece
+    https://en.wikipedia.org/wiki/Programming_language 2
+parts
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+containers
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+commenting
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+party
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+frame
+    https://en.wikipedia.org/wiki/Java_(programming_language) 5
+however
+    https://en.wikipedia.org/wiki/Programming_language 10
+    https://en.wikipedia.org/wiki/Java_(programming_language) 6
+for
+    https://en.wikipedia.org/wiki/Programming_language 72
+    https://en.wikipedia.org/wiki/Java_(programming_language) 66
+collector
+    https://en.wikipedia.org/wiki/Java_(programming_language) 6
+content
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+burden
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+desktop
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+related
+    https://en.wikipedia.org/wiki/Programming_language 3
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+oak
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+client
+    https://en.wikipedia.org/wiki/Java_(programming_language) 5
+foss
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+divide
+    https://en.wikipedia.org/wiki/Programming_language 1
+class
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 49
+conversion
+    https://en.wikipedia.org/wiki/Programming_language 1
+digital
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+over
+    https://en.wikipedia.org/wiki/Programming_language 3
+directed
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+false
+    https://en.wikipedia.org/wiki/Programming_language 1
+go
+    https://en.wikipedia.org/wiki/Programming_language 1
+specification
+    https://en.wikipedia.org/wiki/Programming_language 9
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+formalize
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+form
+    https://en.wikipedia.org/wiki/Programming_language 11
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+management
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+significantly
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+comprehensive
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+he
+    https://en.wikipedia.org/wiki/Programming_language 1
+humans
+    https://en.wikipedia.org/wiki/Programming_language 1
+subset
+    https://en.wikipedia.org/wiki/Programming_language 3
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+assign
+    https://en.wikipedia.org/wiki/Programming_language 1
+very
+    https://en.wikipedia.org/wiki/Programming_language 2
+practice
+    https://en.wikipedia.org/wiki/Programming_language 3
+triggered
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+placed
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+advanced
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+deallocate
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+j2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+improved
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+output
+    https://en.wikipedia.org/wiki/Programming_language 2
+relationships
+    https://en.wikipedia.org/wiki/Programming_language 1
+corner
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+william
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+four
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+context
+    https://en.wikipedia.org/wiki/Programming_language 4
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+model
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+if
+    https://en.wikipedia.org/wiki/Programming_language 6
+    https://en.wikipedia.org/wiki/Java_(programming_language) 9
+tasks
+    https://en.wikipedia.org/wiki/Programming_language 1
+sentence
+    https://en.wikipedia.org/wiki/Programming_language 2
+likely
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+large
+    https://en.wikipedia.org/wiki/Programming_language 4
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+surface
+    https://en.wikipedia.org/wiki/Programming_language 1
+in
+    https://en.wikipedia.org/wiki/Programming_language 111
+    https://en.wikipedia.org/wiki/Java_(programming_language) 73
+io
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+dismissed
+    https://en.wikipedia.org/wiki/Programming_language 1
+is
+    https://en.wikipedia.org/wiki/Programming_language 67
+    https://en.wikipedia.org/wiki/Java_(programming_language) 93
+it
+    https://en.wikipedia.org/wiki/Programming_language 28
+    https://en.wikipedia.org/wiki/Java_(programming_language) 28
+foolish
+    https://en.wikipedia.org/wiki/Programming_language 1
+aimed
+    https://en.wikipedia.org/wiki/Programming_language 1
+resulting
+    https://en.wikipedia.org/wiki/Programming_language 1
+odd
+    https://en.wikipedia.org/wiki/Programming_language 1
+traditional
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+operate
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+contrast
+    https://en.wikipedia.org/wiki/Programming_language 3
+exclusively
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+john
+    https://en.wikipedia.org/wiki/Programming_language 3
+hello
+    https://en.wikipedia.org/wiki/Java_(programming_language) 16
+jsps
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+begin
+    https://en.wikipedia.org/wiki/Programming_language 1
+become
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+recovering
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+works
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+brought
+    https://en.wikipedia.org/wiki/Programming_language 1
+langpop
+    https://en.wikipedia.org/wiki/Programming_language 1
+appending
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+eventually
+    https://en.wikipedia.org/wiki/Programming_language 1
+sequences
+    https://en.wikipedia.org/wiki/Programming_language 3
+settlement
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+literature
+    https://en.wikipedia.org/wiki/Programming_language 1
+world
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 6
+library
+    https://en.wikipedia.org/wiki/Programming_language 10
+    https://en.wikipedia.org/wiki/Java_(programming_language) 8
+strings
+    https://en.wikipedia.org/wiki/Programming_language 1
+december
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+ability
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+everything
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+implementations
+    https://en.wikipedia.org/wiki/Programming_language 6
+    https://en.wikipedia.org/wiki/Java_(programming_language) 6
+side
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+overrides
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+draw
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+off
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+generally
+    https://en.wikipedia.org/wiki/Programming_language 6
+century
+    https://en.wikipedia.org/wiki/Programming_language 1
+traditionally
+    https://en.wikipedia.org/wiki/Programming_language 2
+corporate
+    https://en.wikipedia.org/wiki/Programming_language 1
+instruction
+    https://en.wikipedia.org/wiki/Programming_language 1
+facilities
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+complete
+    https://en.wikipedia.org/wiki/Programming_language 6
+conscious
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+certify
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+several
+    https://en.wikipedia.org/wiki/Programming_language 3
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+annotations
+    https://en.wikipedia.org/wiki/Programming_language 2
+office
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+subroutine
+    https://en.wikipedia.org/wiki/Programming_language 1
+diffuse
+    https://en.wikipedia.org/wiki/Programming_language 1
+while
+    https://en.wikipedia.org/wiki/Programming_language 7
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+suffix
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+second
+    https://en.wikipedia.org/wiki/Programming_language 3
+that
+    https://en.wikipedia.org/wiki/Programming_language 59
+    https://en.wikipedia.org/wiki/Java_(programming_language) 48
+high
+    https://en.wikipedia.org/wiki/Programming_language 9
+faster
+    https://en.wikipedia.org/wiki/Programming_language 1
+split
+    https://en.wikipedia.org/wiki/Programming_language 1
+than
+    https://en.wikipedia.org/wiki/Programming_language 7
+    https://en.wikipedia.org/wiki/Java_(programming_language) 5
+sufficient
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+me
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+relentless
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+claim
+    https://en.wikipedia.org/wiki/Programming_language 1
+criticisms
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+different
+    https://en.wikipedia.org/wiki/Programming_language 11
+    https://en.wikipedia.org/wiki/Java_(programming_language) 9
+directly
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+communication
+    https://en.wikipedia.org/wiki/Programming_language 1
+ml
+    https://en.wikipedia.org/wiki/Programming_language 3
+semantically
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+level
+    https://en.wikipedia.org/wiki/Programming_language 14
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+restrictions
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+thrown
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+throws
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+chosen
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+relevant
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+license
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+collectors
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+helloworldapp
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+termed
+    https://en.wikipedia.org/wiki/Programming_language 2
+errors
+    https://en.wikipedia.org/wiki/Programming_language 3
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+no
+    https://en.wikipedia.org/wiki/Programming_language 4
+    https://en.wikipedia.org/wiki/Java_(programming_language) 7
+behind
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+code
+    https://en.wikipedia.org/wiki/Programming_language 16
+    https://en.wikipedia.org/wiki/Java_(programming_language) 21
+sheridan
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+pairings
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+sql
+    https://en.wikipedia.org/wiki/Programming_language 1
+considerable
+    https://en.wikipedia.org/wiki/Programming_language 1
+bcpl
+    https://en.wikipedia.org/wiki/Programming_language 1
+setdefaultcloseoperation
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+of
+    https://en.wikipedia.org/wiki/Programming_language 163
+    https://en.wikipedia.org/wiki/Java_(programming_language) 116
+somehow
+    https://en.wikipedia.org/wiki/Programming_language 1
+heap
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+on
+    https://en.wikipedia.org/wiki/Programming_language 27
+    https://en.wikipedia.org/wiki/Java_(programming_language) 25
+allocated
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+unofficial
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+allows
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 6
+macro
+    https://en.wikipedia.org/wiki/Programming_language 1
+or
+    https://en.wikipedia.org/wiki/Programming_language 43
+    https://en.wikipedia.org/wiki/Java_(programming_language) 17
+os
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+determine
+    https://en.wikipedia.org/wiki/Programming_language 1
+nature
+    https://en.wikipedia.org/wiki/Programming_language 2
+control
+    https://en.wikipedia.org/wiki/Programming_language 5
+    https://en.wikipedia.org/wiki/Java_(programming_language) 5
+families
+    https://en.wikipedia.org/wiki/Programming_language 1
+contractors
+    https://en.wikipedia.org/wiki/Programming_language 1
+editions
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+essentially
+    https://en.wikipedia.org/wiki/Programming_language 1
+remarks
+    https://en.wikipedia.org/wiki/Programming_language 1
+handler
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+coherent
+    https://en.wikipedia.org/wiki/Programming_language 1
+upper
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+stood
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+promised
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+objective
+    https://en.wikipedia.org/wiki/Programming_language 1
+extremely
+    https://en.wikipedia.org/wiki/Programming_language 1
+speaking
+    https://en.wikipedia.org/wiki/Programming_language 1
+<applet>
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+raises
+    https://en.wikipedia.org/wiki/Programming_language 1
+programmers
+    https://en.wikipedia.org/wiki/Programming_language 4
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+exhibit
+    https://en.wikipedia.org/wiki/Programming_language 1
+brand
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+they
+    https://en.wikipedia.org/wiki/Programming_language 12
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+closely
+    https://en.wikipedia.org/wiki/Programming_language 2
+them
+    https://en.wikipedia.org/wiki/Programming_language 6
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+interpreter
+    https://en.wikipedia.org/wiki/Programming_language 4
+portable
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+then
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+accept
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+appletcontext
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+re
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+concepts
+    https://en.wikipedia.org/wiki/Programming_language 4
+invoked
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+interpreted
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+starting
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+subsets
+    https://en.wikipedia.org/wiki/Programming_language 1
+checking
+    https://en.wikipedia.org/wiki/Programming_language 5
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+access
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 7
+primitive
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+grammatical
+    https://en.wikipedia.org/wiki/Programming_language 1
+executed
+    https://en.wikipedia.org/wiki/Programming_language 6
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+sun
+    https://en.wikipedia.org/wiki/Java_(programming_language) 29
+seen
+    https://en.wikipedia.org/wiki/Programming_language 1
+seem
+    https://en.wikipedia.org/wiki/Programming_language 1
+referring
+    https://en.wikipedia.org/wiki/Programming_language 1
+se
+    https://en.wikipedia.org/wiki/Java_(programming_language) 8
+current
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+managed
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+so
+    https://en.wikipedia.org/wiki/Programming_language 6
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+preferred
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+key
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+issuing
+    https://en.wikipedia.org/wiki/Programming_language 1
+decision
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+one
+    https://en.wikipedia.org/wiki/Programming_language 14
+    https://en.wikipedia.org/wiki/Java_(programming_language) 7
+makes
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+started
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+launch
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+ideally
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+single
+    https://en.wikipedia.org/wiki/Programming_language 5
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+handled
+    https://en.wikipedia.org/wiki/Programming_language 1
+closed
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+to
+    https://en.wikipedia.org/wiki/Programming_language 117
+    https://en.wikipedia.org/wiki/Java_(programming_language) 115
+vast
+    https://en.wikipedia.org/wiki/Programming_language 1
+fourth
+    https://en.wikipedia.org/wiki/Programming_language 1
+partially
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+reimplementation
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+but
+    https://en.wikipedia.org/wiki/Programming_language 10
+    https://en.wikipedia.org/wiki/Java_(programming_language) 10
+commercial
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+declare
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+separate
+    https://en.wikipedia.org/wiki/Programming_language 3
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+available
+    https://en.wikipedia.org/wiki/Programming_language 6
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+express
+    https://en.wikipedia.org/wiki/Programming_language 4
+rules
+    https://en.wikipedia.org/wiki/Programming_language 4
+contexts
+    https://en.wikipedia.org/wiki/Programming_language 1
+aqua
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+regularly
+    https://en.wikipedia.org/wiki/Programming_language 1
+apache
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+ruled
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+aids
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+dynamic
+    https://en.wikipedia.org/wiki/Programming_language 4
+details
+    https://en.wikipedia.org/wiki/Programming_language 1
+military
+    https://en.wikipedia.org/wiki/Programming_language 1
+written
+    https://en.wikipedia.org/wiki/Programming_language 6
+    https://en.wikipedia.org/wiki/Java_(programming_language) 9
+up
+    https://en.wikipedia.org/wiki/Programming_language 1
+disuse
+    https://en.wikipedia.org/wiki/Programming_language 1
+generate
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+unusual
+    https://en.wikipedia.org/wiki/Programming_language 1
+us
+    https://en.wikipedia.org/wiki/Programming_language 1
+treated
+    https://en.wikipedia.org/wiki/Programming_language 3
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+oracle
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 14
+this
+    https://en.wikipedia.org/wiki/Programming_language 18
+    https://en.wikipedia.org/wiki/Java_(programming_language) 22
+degree
+    https://en.wikipedia.org/wiki/Programming_language 2
+modules
+    https://en.wikipedia.org/wiki/Programming_language 1
+especially
+    https://en.wikipedia.org/wiki/Programming_language 1
+once
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 6
+vm
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+transformations
+    https://en.wikipedia.org/wiki/Programming_language 2
+solve
+    https://en.wikipedia.org/wiki/Programming_language 1
+support
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 10
+insists
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+higher
+    https://en.wikipedia.org/wiki/Programming_language 4
+implements
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+jazelle
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+idea
+    https://en.wikipedia.org/wiki/Programming_language 1
+vehicles
+    https://en.wikipedia.org/wiki/Programming_language 1
+expects
+    https://en.wikipedia.org/wiki/Programming_language 2
+printstream
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+proprietary
+    https://en.wikipedia.org/wiki/Programming_language 8
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+kit
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+throughout
+    https://en.wikipedia.org/wiki/Programming_language 1
+disposed
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+emphasize
+    https://en.wikipedia.org/wiki/Programming_language 1
+normal
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+types
+    https://en.wikipedia.org/wiki/Programming_language 14
+    https://en.wikipedia.org/wiki/Java_(programming_language) 6
+encourages
+    https://en.wikipedia.org/wiki/Programming_language 1
+strokes
+    https://en.wikipedia.org/wiki/Programming_language 1
+cases
+    https://en.wikipedia.org/wiki/Programming_language 3
+previous
+    https://en.wikipedia.org/wiki/Programming_language 1
+classpath
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+technology
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+flute
+    https://en.wikipedia.org/wiki/Programming_language 1
+typed
+    https://en.wikipedia.org/wiki/Programming_language 19
+xp
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+untyped
+    https://en.wikipedia.org/wiki/Programming_language 2
+z3
+    https://en.wikipedia.org/wiki/Programming_language 1
+ones
+    https://en.wikipedia.org/wiki/Programming_language 2
+paintcomponent
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+passing
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+3gls
+    https://en.wikipedia.org/wiki/Programming_language 1
+software
+    https://en.wikipedia.org/wiki/Programming_language 3
+    https://en.wikipedia.org/wiki/Java_(programming_language) 9
+graphical
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+processors
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+type
+    https://en.wikipedia.org/wiki/Programming_language 35
+    https://en.wikipedia.org/wiki/Java_(programming_language) 5
+april
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+problem
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+terms
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+presence
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+between
+    https://en.wikipedia.org/wiki/Programming_language 10
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+phase
+    https://en.wikipedia.org/wiki/Programming_language 1
+goal
+    https://en.wikipedia.org/wiki/Programming_language 3
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+method
+    https://en.wikipedia.org/wiki/Java_(programming_language) 31
+natural
+    https://en.wikipedia.org/wiki/Programming_language 9
+overhead
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+procedural
+    https://en.wikipedia.org/wiki/Programming_language 1
+icedtea
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+exist
+    https://en.wikipedia.org/wiki/Programming_language 2
+concatenation
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+combinations
+    https://en.wikipedia.org/wiki/Programming_language 1
+examples
+    https://en.wikipedia.org/wiki/Programming_language 3
+following
+    https://en.wikipedia.org/wiki/Programming_language 4
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+exact
+    https://en.wikipedia.org/wiki/Programming_language 1
+substantially
+    https://en.wikipedia.org/wiki/Programming_language 1
+hotspot
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+james
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+distribution
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+tools
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+out
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+weak
+    https://en.wikipedia.org/wiki/Programming_language 1
+leak
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+feature
+    https://en.wikipedia.org/wiki/Programming_language 1
+elaborated
+    https://en.wikipedia.org/wiki/Programming_language 1
+continues
+    https://en.wikipedia.org/wiki/Programming_language 1
+initialized
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+leap
+    https://en.wikipedia.org/wiki/Programming_language 1
+precise
+    https://en.wikipedia.org/wiki/Programming_language 2
+regular
+    https://en.wikipedia.org/wiki/Programming_language 1
+1970s
+    https://en.wikipedia.org/wiki/Programming_language 2
+dispute
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+initializes
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+token
+    https://en.wikipedia.org/wiki/Programming_language 1
+help
+    https://en.wikipedia.org/wiki/Programming_language 1
+expect
+    https://en.wikipedia.org/wiki/Programming_language 1
+additionally
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+elements
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+structuring
+    https://en.wikipedia.org/wiki/Programming_language 1
+located
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+responses
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+prone
+    https://en.wikipedia.org/wiki/Programming_language 1
+mathematical
+    https://en.wikipedia.org/wiki/Programming_language 3
+addresses
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+succeeds
+    https://en.wikipedia.org/wiki/Programming_language 1
+data
+    https://en.wikipedia.org/wiki/Programming_language 16
+    https://en.wikipedia.org/wiki/Java_(programming_language) 9
+theoretical
+    https://en.wikipedia.org/wiki/Programming_language 1
+adequate
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+own
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+gosling
+    https://en.wikipedia.org/wiki/Java_(programming_language) 5
+describing
+    https://en.wikipedia.org/wiki/Programming_language 1
+only
+    https://en.wikipedia.org/wiki/Programming_language 7
+    https://en.wikipedia.org/wiki/Java_(programming_language) 8
+should
+    https://en.wikipedia.org/wiki/Programming_language 3
+create
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+tag
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+mechanisms
+    https://en.wikipedia.org/wiki/Programming_language 1
+readable
+    https://en.wikipedia.org/wiki/Programming_language 1
+matlab
+    https://en.wikipedia.org/wiki/Programming_language 1
+development
+    https://en.wikipedia.org/wiki/Programming_language 5
+    https://en.wikipedia.org/wiki/Java_(programming_language) 4
+like
+    https://en.wikipedia.org/wiki/Programming_language 6
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+servletexception
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+accepted
+    https://en.wikipedia.org/wiki/Programming_language 1
+sent
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+regards
+    https://en.wikipedia.org/wiki/Programming_language 1
+grammatically
+    https://en.wikipedia.org/wiki/Programming_language 1
+core
+    https://en.wikipedia.org/wiki/Programming_language 5
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+proposed
+    https://en.wikipedia.org/wiki/Programming_language 3
+purposes
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+person
+    https://en.wikipedia.org/wiki/Programming_language 1
+safe
+    https://en.wikipedia.org/wiki/Programming_language 2
+files
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+enforce
+    https://en.wikipedia.org/wiki/Programming_language 1
+ground
+    https://en.wikipedia.org/wiki/Programming_language 1
+potentially
+    https://en.wikipedia.org/wiki/Programming_language 1
+here
+    https://en.wikipedia.org/wiki/Programming_language 1
+note
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+ancestry
+    https://en.wikipedia.org/wiki/Programming_language 1
+purpose
+    https://en.wikipedia.org/wiki/Programming_language 7
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+rejected
+    https://en.wikipedia.org/wiki/Programming_language 2
+line
+    https://en.wikipedia.org/wiki/Programming_language 4
+    https://en.wikipedia.org/wiki/Java_(programming_language) 6
+weakly
+    https://en.wikipedia.org/wiki/Programming_language 3
+scale
+    https://en.wikipedia.org/wiki/Programming_language 2
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+distinct
+    https://en.wikipedia.org/wiki/Programming_language 2
+can
+    https://en.wikipedia.org/wiki/Programming_language 22
+    https://en.wikipedia.org/wiki/Java_(programming_language) 18
+security
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+targeting
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+computing
+    https://en.wikipedia.org/wiki/Programming_language 4
+eligible
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+floating
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+said
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+tcl
+    https://en.wikipedia.org/wiki/Programming_language 1
+player
+    https://en.wikipedia.org/wiki/Programming_language 2
+carried
+    https://en.wikipedia.org/wiki/Programming_language 1
+cost
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+aims
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+will
+    https://en.wikipedia.org/wiki/Programming_language 3
+    https://en.wikipedia.org/wiki/Java_(programming_language) 2
+idle
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+limited
+    https://en.wikipedia.org/wiki/Programming_language 2
+studied
+    https://en.wikipedia.org/wiki/Programming_language 1
+implementation
+    https://en.wikipedia.org/wiki/Programming_language 10
+    https://en.wikipedia.org/wiki/Java_(programming_language) 18
+arbitrary
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+groups
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+standardize
+    https://en.wikipedia.org/wiki/Programming_language 1
+allowing
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+intent
+    https://en.wikipedia.org/wiki/Programming_language 1
+loopholes
+    https://en.wikipedia.org/wiki/Programming_language 1
+factors
+    https://en.wikipedia.org/wiki/Programming_language 1
+fragment
+    https://en.wikipedia.org/wiki/Programming_language 1
+boolean
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+compliance
+    https://en.wikipedia.org/wiki/Java_(programming_language) 1
+response
+    https://en.wikipedia.org/wiki/Java_(programming_language) 5
+arguments
+    https://en.wikipedia.org/wiki/Programming_language 1
+    https://en.wikipedia.org/wiki/Java_(programming_language) 3
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

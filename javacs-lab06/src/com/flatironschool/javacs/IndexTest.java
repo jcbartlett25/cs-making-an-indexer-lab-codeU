@@ -31,6 +31,8 @@ public class IndexTest {
 		url = "https://en.wikipedia.org/wiki/Programming_language";
 		paragraphs = wf.readWikipedia(url);
 		index.indexPage(url, paragraphs);
+
+		index.printIndex();
 		
 		// check the results: the word "occur" only appears on one page, twice
 		Set<TermCounter> set = index.get("occur");
